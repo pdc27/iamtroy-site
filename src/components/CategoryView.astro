@@ -18,7 +18,6 @@ interface Props {
 const { cat, decks, title, h1, crumbs, description } = Astro.props;
 const first = cat.intro.find((b) => b.type === 'p') as { text: string } | undefined;
 const rest = cat.intro.filter((b) => b !== first);
-const withList = decks.filter((d) => d.slug).length;
 const ld = {
   '@context': 'https://schema.org', '@type': 'CollectionPage', name: h1, inLanguage: 'pt-BR',
   url: new URL(categoryPath(cat.slug), site.domain).href,
@@ -35,7 +34,7 @@ const ld = {
       <h1>{h1}</h1>
       {cat.colors && <p class="sub"><Pips colors={cat.colors} size="1.3rem" /> <span>{colorLabel(cat.colors)}</span></p>}
       {first && <p class="lead">{first.text}</p>}
-      <p class="count">{decks.length} decks{withList ? ` · ${withList} com lista completa no site` : ''}</p>
+      <p class="count">{decks.length} decks</p>
     </div>
   </header>
 

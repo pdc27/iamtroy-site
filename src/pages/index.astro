@@ -8,7 +8,8 @@ import { decks, latestDecks, colorCategories, decksIn, categoryPath, GROUPS } fr
 
 const latest = latestDecks(8);
 const total = decks.length;
-const withList = decks.filter((d) => d.slug).length;
+const commanderCount = decks.filter((d) => d.format === 'commander').length;
+const pauperCount = decks.filter((d) => d.format === 'pauper').length;
 
 const jsonLd = [
   {
@@ -44,11 +45,11 @@ const jsonLd = [
         <p class="muted">Pega sua carta favorita, aumenta o volume e vem junto.</p>
         <div class="hero__cta">
           <a class="btn" href="/decks-commander">Ver os decks <Icon name="arrow" /></a>
-          <a class="btn btn--ghost" href={site.social.youtube} target="_blank" rel="noopener"><Icon name="youtube" /> Assistir no YouTube</a>
+          <a class="btn btn--ghost" href={site.social.instagram} target="_blank" rel="noopener me"><Icon name="instagram" /> Seguir no Instagram</a>
         </div>
         <dl class="stats">
-          <div><dt>Decks</dt><dd>{total}</dd></div>
-          <div><dt>Com lista completa</dt><dd>{withList}</dd></div>
+          <div><dt>Decks Commander</dt><dd>{commanderCount}</dd></div>
+          <div><dt>Decks Pauper</dt><dd>{pauperCount}</dd></div>
           <div><dt>Cupom</dt><dd>{site.coupon}</dd></div>
         </dl>
       </div>
