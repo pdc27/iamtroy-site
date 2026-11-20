@@ -1106,5 +1106,20 @@
     "name": "Mono Red Blitz",
     "url": "https://lig.ae/d/9967178",
     "coverCard": "Lightning Bolt"
+  },
+  {
+    "category": "jeskai",
+    "name": "Jean-Luc Picard, Luminary",
+    "url": "https://magicfinder.app/deck/05fe1b70-056e-49e1-afe5-c900c46920ca?ref=FU9P9UZN"
+  },
+  {
+    "category": "boros",
+    "name": "Mabel, Valley Hero (low budget)",
+    "url": "https://magicfinder.app/deck/ace40e1e-6dc0-48c7-861c-451fecd340ba?ref=FU9P9UZN"
+  },
+  {
+    "category": "vermelho",
+    "name": "Grenzo, Havoc Raiser (low budget)",
+    "url": "https://magicfinder.app/deck/9552eccb-b676-4909-9c65-1e21d7026052?ref=FU9P9UZN"
   }
 ]

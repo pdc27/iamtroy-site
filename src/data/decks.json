@@ -63641,5 +63641,1065 @@
   "cards": null,
   "coverCard": "Lightning Bolt",
   "cover": "https://cards.scryfall.io/art_crop/front/7/6/7673784e-db4b-43a1-8d55-1bb9fc1e284f.jpg?1783903008"
+ },
+ {
+  "name": "Jean-Luc Picard, Luminary",
+  "category": "jeskai",
+  "format": "commander",
+  "url": "https://magicfinder.app/deck/05fe1b70-056e-49e1-afe5-c900c46920ca?ref=FU9P9UZN",
+  "source": "MagicFinder",
+  "slug": "jean-luc-picard-luminary",
+  "cards": [
+   {
+    "n": "Academy Ruins",
+    "q": 1
+   },
+   {
+    "n": "Adagia, Windswept Bastion",
+    "q": 1
+   },
+   {
+    "n": "Aetheric Amplifier",
+    "q": 1
+   },
+   {
+    "n": "Ambulatory Reactor",
+    "q": 1
+   },
+   {
+    "n": "Antagonist Incorporator",
+    "q": 1
+   },
+   {
+    "n": "Arcane Signet",
+    "q": 1
+   },
+   {
+    "n": "Archway of Innovation",
+    "q": 1
+   },
+   {
+    "n": "Astral Cornucopia",
+    "q": 1
+   },
+   {
+    "n": "Battlefield Forge",
+    "q": 1
+   },
+   {
+    "n": "Mikaeus, the Lunarch",
+    "q": 1
+   },
+   {
+    "n": "Blinkmoth Nexus",
+    "q": 1
+   },
+   {
+    "n": "Borg Scout Sphere",
+    "q": 1
+   },
+   {
+    "n": "Brainstorm",
+    "q": 1
+   },
+   {
+    "n": "Captain James T. Kirk",
+    "q": 1
+   },
+   {
+    "n": "Captain Janeway, Endgame",
+    "q": 1
+   },
+   {
+    "n": "Cascading Cataracts",
+    "q": 1
+   },
+   {
+    "n": "Castle Doom",
+    "q": 1
+   },
+   {
+    "n": "Chaos Warp",
+    "q": 1
+   },
+   {
+    "n": "City of Brass",
+    "q": 1
+   },
+   {
+    "n": "Collective Override",
+    "q": 1
+   },
+   {
+    "n": "Command Bridge",
+    "q": 1
+   },
+   {
+    "n": "Command Chair",
+    "q": 1
+   },
+   {
+    "n": "Command Tower",
+    "q": 1
+   },
+   {
+    "n": "Consult the Star Charts",
+    "q": 1
+   },
+   {
+    "n": "Cosmogrand Zenith",
+    "q": 1
+   },
+   {
+    "n": "Cyberman Patrol",
+    "q": 1
+   },
+   {
+    "n": "Data, Exploring Humanity",
+    "q": 1
+   },
+   {
+    "n": "Dawnsire, Sunstar Dreadnought",
+    "q": 1
+   },
+   {
+    "n": "Deserted Temple",
+    "q": 1
+   },
+   {
+    "n": "Devastating Onslaught",
+    "q": 1
+   },
+   {
+    "n": "Dispatch",
+    "q": 1
+   },
+   {
+    "n": "Erode",
+    "q": 1
+   },
+   {
+    "n": "Everflowing Chalice",
+    "q": 1
+   },
+   {
+    "n": "Exotic Orchard",
+    "q": 1
+   },
+   {
+    "n": "Expansion Algorithm",
+    "q": 1
+   },
+   {
+    "n": "Federation Outpost",
+    "q": 1
+   },
+   {
+    "n": "Forsaken Monument",
+    "q": 1
+   },
+   {
+    "n": "Foundry Inspector",
+    "q": 1
+   },
+   {
+    "n": "Gemstone Mine",
+    "q": 1
+   },
+   {
+    "n": "Haliya, Guided by Light",
+    "q": 1
+   },
+   {
+    "n": "Inkmoth Nexus",
+    "q": 1
+   },
+   {
+    "n": "Inspirit, Flagship Vessel",
+    "q": 1
+   },
+   {
+    "n": "K-9, Mark I",
+    "q": 1
+   },
+   {
+    "n": "Kilo, Apogee Mind",
+    "q": 1
+   },
+   {
+    "n": "Lotus Field",
+    "q": 1
+   },
+   {
+    "n": "Maturation Chamber",
+    "q": 1
+   },
+   {
+    "n": "Meteor Crater",
+    "q": 1
+   },
+   {
+    "n": "Mirrorpool",
+    "q": 1
+   },
+   {
+    "n": "Mutavault",
+    "q": 1
+   },
+   {
+    "n": "Mystic Forge",
+    "q": 1
+   },
+   {
+    "n": "Mystic Monastery",
+    "q": 1
+   },
+   {
+    "n": "Nexus of Fate",
+    "q": 1
+   },
+   {
+    "n": "Ni'Var Science Academy",
+    "q": 1
+   },
+   {
+    "n": "Jhoira, Weatherlight Captain",
+    "q": 1
+   },
+   {
+    "n": "Optimization Annex",
+    "q": 1
+   },
+   {
+    "n": "Path of Ancestry",
+    "q": 1
+   },
+   {
+    "n": "Path to Exile",
+    "q": 1
+   },
+   {
+    "n": "Patrolling Peacemaker",
+    "q": 1
+   },
+   {
+    "n": "Pinnacle Emissary",
+    "q": 1
+   },
+   {
+    "n": "Plaza of Heroes",
+    "q": 1
+   },
+   {
+    "n": "Power Depot",
+    "q": 1
+   },
+   {
+    "n": "Primary Unimatrix Adjunct",
+    "q": 1
+   },
+   {
+    "n": "Razortide Bridge",
+    "q": 1
+   },
+   {
+    "n": "Recon Craft Theta",
+    "q": 1
+   },
+   {
+    "n": "Reflecting Pool",
+    "q": 1
+   },
+   {
+    "n": "Reliquary Tower",
+    "q": 1
+   },
+   {
+    "n": "Ripples of Potential",
+    "q": 1
+   },
+   {
+    "n": "Robe of Stars",
+    "q": 1
+   },
+   {
+    "n": "Rogue's Passage",
+    "q": 1
+   },
+   {
+    "n": "Sami, Wildcat Captain",
+    "q": 1
+   },
+   {
+    "n": "Securitron Squadron",
+    "q": 1
+   },
+   {
+    "n": "Seven of Nine, Unassimilated",
+    "q": 1
+   },
+   {
+    "n": "Skycloud Expanse",
+    "q": 1
+   },
+   {
+    "n": "Sol Ring",
+    "q": 1
+   },
+   {
+    "n": "Solar Array",
+    "q": 1
+   },
+   {
+    "n": "Sonic Screwdriver",
+    "q": 1
+   },
+   {
+    "n": "Spire of Industry",
+    "q": 1
+   },
+   {
+    "n": "Stella Lee, Wild Card",
+    "q": 1
+   },
+   {
+    "n": "Starfleet Academy",
+    "q": 1
+   },
+   {
+    "n": "Starfleet Communicator",
+    "q": 1
+   },
+   {
+    "n": "Starship Enterprise",
+    "q": 1
+   },
+   {
+    "n": "Steel Overseer",
+    "q": 1
+   },
+   {
+    "n": "Supplementation Node",
+    "q": 1
+   },
+   {
+    "n": "Surge Conductor",
+    "q": 1
+   },
+   {
+    "n": "Temple of Enlightenment",
+    "q": 1
+   },
+   {
+    "n": "Tezzeret, Cruel Captain",
+    "q": 1
+   },
+   {
+    "n": "The Mycosynth Gardens",
+    "q": 1
+   },
+   {
+    "n": "The Seriema",
+    "q": 1
+   },
+   {
+    "n": "Thespian's Stage",
+    "q": 1
+   },
+   {
+    "n": "Thought Vessel",
+    "q": 1
+   },
+   {
+    "n": "Type-03 Borg Vessel",
+    "q": 1
+   },
+   {
+    "n": "U.S.S. Enterprise-A, Free Spirit",
+    "q": 1
+   },
+   {
+    "n": "U.S.S. Enterprise-D, Galaxy-Class",
+    "q": 1
+   },
+   {
+    "n": "U.S.S. Enterprise-E, Sovereign",
+    "q": 1
+   },
+   {
+    "n": "Unwinding Clock",
+    "q": 1
+   },
+   {
+    "n": "Uthros Research Craft",
+    "q": 1
+   },
+   {
+    "n": "Uthros, Titanic Godcore",
+    "q": 1
+   },
+   {
+    "n": "Vulcan",
+    "q": 1
+   },
+   {
+    "n": "Warping Wail",
+    "q": 1
+   }
+  ],
+  "sideboard": [
+   {
+    "n": "Jean-Luc Picard, Luminary",
+    "q": 1
+   }
+  ],
+  "commanders": [
+   "Jean-Luc Picard, Luminary"
+  ],
+  "colors": [],
+  "curve": [
+   2,
+   8,
+   14,
+   21,
+   9,
+   6,
+   3
+  ],
+  "avgCmc": 2.92,
+  "bracket": 2,
+  "priceUsd": 262.31,
+  "cover": "https://cards.scryfall.io/art_crop/front/1/3/136b07f3-b902-41af-8732-92c6448b6ef9.jpg?1792551639",
+  "created": "2026-11-16T19:39:17.669063+00:00",
+  "updated": "2026-11-16T19:39:17.669063+00:00"
+ },
+ {
+  "name": "Mabel, Valley Hero (low budget)",
+  "category": "boros",
+  "format": "commander",
+  "url": "https://magicfinder.app/deck/ace40e1e-6dc0-48c7-861c-451fecd340ba?ref=FU9P9UZN",
+  "source": "MagicFinder",
+  "slug": "mabel-valley-hero-low-budget",
+  "cards": [
+   {
+    "n": "Abzan Falconer",
+    "q": 1
+   },
+   {
+    "n": "Agent Bishop, Man in Black",
+    "q": 1
+   },
+   {
+    "n": "Angelic Sell-Sword",
+    "q": 1
+   },
+   {
+    "n": "Araña, Heart of the Spider",
+    "q": 1
+   },
+   {
+    "n": "Austere Command",
+    "q": 1
+   },
+   {
+    "n": "Axgard Artisan",
+    "q": 1
+   },
+   {
+    "n": "Battlefield Forge",
+    "q": 1
+   },
+   {
+    "n": "Boros Garrison",
+    "q": 1
+   },
+   {
+    "n": "Bulwark Ox",
+    "q": 1
+   },
+   {
+    "n": "Cartographer's Hawk",
+    "q": 1
+   },
+   {
+    "n": "Chaos Warp",
+    "q": 1
+   },
+   {
+    "n": "Chocobo Knights",
+    "q": 1
+   },
+   {
+    "n": "Claim Jumper",
+    "q": 1
+   },
+   {
+    "n": "Clifftop Retreat",
+    "q": 1
+   },
+   {
+    "n": "Collective Effort",
+    "q": 1
+   },
+   {
+    "n": "Command Tower",
+    "q": 1
+   },
+   {
+    "n": "Cursed Mirror",
+    "q": 1
+   },
+   {
+    "n": "Damning Verdict",
+    "q": 1
+   },
+   {
+    "n": "Dusk Legion Duelist",
+    "q": 1
+   },
+   {
+    "n": "Elite Scaleguard",
+    "q": 1
+   },
+   {
+    "n": "Emberheart Challenger",
+    "q": 1
+   },
+   {
+    "n": "Envoy of the Ancestors",
+    "q": 1
+   },
+   {
+    "n": "Felidar Retreat",
+    "q": 1
+   },
+   {
+    "n": "Furycalm Snarl",
+    "q": 1
+   },
+   {
+    "n": "Gallia, the Merrymaker",
+    "q": 1
+   },
+   {
+    "n": "Gallifrey Falls // No More",
+    "q": 1
+   },
+   {
+    "n": "Glimpse the Impossible",
+    "q": 1
+   },
+   {
+    "n": "Grand Crescendo",
+    "q": 1
+   },
+   {
+    "n": "Grateful Apparition",
+    "q": 1
+   },
+   {
+    "n": "Guardian Scalelord",
+    "q": 1
+   },
+   {
+    "n": "Guiding Hydra",
+    "q": 1
+   },
+   {
+    "n": "Idyllic Grange",
+    "q": 1
+   },
+   {
+    "n": "Kami of Celebration",
+    "q": 1
+   },
+   {
+    "n": "Knight of the White Orchid",
+    "q": 1
+   },
+   {
+    "n": "Legion Leadership // Legion Stronghold",
+    "q": 1
+   },
+   {
+    "n": "Light Up the Stage",
+    "q": 1
+   },
+   {
+    "n": "Lorehold Charm",
+    "q": 1
+   },
+   {
+    "n": "Loyal Warhound",
+    "q": 1
+   },
+   {
+    "n": "Mabel, Valley Hero",
+    "q": 1
+   },
+   {
+    "n": "Maximum Carnage",
+    "q": 1
+   },
+   {
+    "n": "Metastatic Evangel",
+    "q": 1
+   },
+   {
+    "n": "Mikaeus, the Lunarch",
+    "q": 1
+   },
+   {
+    "n": "Mirror-Style Master",
+    "q": 1
+   },
+   {
+    "n": "Moogles' Valor",
+    "q": 1
+   },
+   {
+    "n": "Mountain",
+    "q": 13
+   },
+   {
+    "n": "Ollenbock Escort",
+    "q": 1
+   },
+   {
+    "n": "Parting Gust",
+    "q": 1
+   },
+   {
+    "n": "Path of Ancestry",
+    "q": 1
+   },
+   {
+    "n": "Path to Exile",
+    "q": 1
+   },
+   {
+    "n": "Patrolling Peacemaker",
+    "q": 1
+   },
+   {
+    "n": "Plains",
+    "q": 14
+   },
+   {
+    "n": "Practiced Offense",
+    "q": 1
+   },
+   {
+    "n": "Radiant Summit",
+    "q": 1
+   },
+   {
+    "n": "Raphael, the Muscle",
+    "q": 1
+   },
+   {
+    "n": "Requisition Raid",
+    "q": 1
+   },
+   {
+    "n": "Return the Favor",
+    "q": 1
+   },
+   {
+    "n": "Rockface Village",
+    "q": 1
+   },
+   {
+    "n": "Rugged Prairie",
+    "q": 1
+   },
+   {
+    "n": "Scholar of New Horizons",
+    "q": 1
+   },
+   {
+    "n": "Sephiroth, Fallen Hero",
+    "q": 1
+   },
+   {
+    "n": "Sevinne's Reclamation",
+    "q": 1
+   },
+   {
+    "n": "Showdown of the Skalds",
+    "q": 1
+   },
+   {
+    "n": "Sigarda's Summons",
+    "q": 1
+   },
+   {
+    "n": "Sol Ring",
+    "q": 1
+   },
+   {
+    "n": "Sticky Fingers",
+    "q": 1
+   },
+   {
+    "n": "Summon: Brynhildr",
+    "q": 1
+   },
+   {
+    "n": "Summon: Ixion",
+    "q": 1
+   },
+   {
+    "n": "Sunscorched Divide",
+    "q": 1
+   },
+   {
+    "n": "Swords to Plowshares",
+    "q": 1
+   },
+   {
+    "n": "The Duke, Rebel Sentry",
+    "q": 1
+   },
+   {
+    "n": "The Flux",
+    "q": 1
+   },
+   {
+    "n": "Tocasia's Welcome",
+    "q": 1
+   },
+   {
+    "n": "Together Forever",
+    "q": 1
+   },
+   {
+    "n": "Whiskervale Forerunner",
+    "q": 1
+   },
+   {
+    "n": "Yoshimaru, Beloved Companion",
+    "q": 1
+   }
+  ],
+  "sideboard": [],
+  "commanders": [
+   "Mabel, Valley Hero"
+  ],
+  "colors": [
+   "W",
+   "R"
+  ],
+  "curve": [
+   0,
+   9,
+   17,
+   17,
+   5,
+   9,
+   4
+  ],
+  "avgCmc": 3.05,
+  "bracket": 2,
+  "priceUsd": 40.09,
+  "cover": "https://cards.scryfall.io/art_crop/front/4/7/47abea4b-9848-48aa-bc1b-f04f4799e920.jpg?1790135467",
+  "created": "2026-11-11T22:45:32.239561+00:00",
+  "updated": "2026-11-11T22:45:32.239561+00:00"
+ },
+ {
+  "name": "Grenzo, Havoc Raiser (low budget)",
+  "category": "vermelho",
+  "format": "commander",
+  "url": "https://magicfinder.app/deck/9552eccb-b676-4909-9c65-1e21d7026052?ref=FU9P9UZN",
+  "source": "MagicFinder",
+  "slug": "grenzo-havoc-raiser-low-budget",
+  "cards": [
+   {
+    "n": "Grenzo, Havoc Raiser",
+    "q": 1
+   },
+   {
+    "n": "Abrade",
+    "q": 1
+   },
+   {
+    "n": "Agitator Ant",
+    "q": 1
+   },
+   {
+    "n": "Amped Raptor",
+    "q": 1
+   },
+   {
+    "n": "Arcane Signet",
+    "q": 1
+   },
+   {
+    "n": "Assaultron Dominator",
+    "q": 1
+   },
+   {
+    "n": "Battle Hymn",
+    "q": 1
+   },
+   {
+    "n": "Beamtown Beatstick",
+    "q": 1
+   },
+   {
+    "n": "Big Score",
+    "q": 1
+   },
+   {
+    "n": "Blasphemous Act",
+    "q": 1
+   },
+   {
+    "n": "Bloodthirsty Blade",
+    "q": 1
+   },
+   {
+    "n": "Brazen Collector",
+    "q": 1
+   },
+   {
+    "n": "Break Through the Line",
+    "q": 1
+   },
+   {
+    "n": "Burnout Bashtronaut",
+    "q": 1
+   },
+   {
+    "n": "Chaos Warp",
+    "q": 1
+   },
+   {
+    "n": "Coveted Jewel",
+    "q": 1
+   },
+   {
+    "n": "Curse of Opulence",
+    "q": 1
+   },
+   {
+    "n": "Curse of the Nightly Hunt",
+    "q": 1
+   },
+   {
+    "n": "Cursed Mirror",
+    "q": 1
+   },
+   {
+    "n": "Cybermat",
+    "q": 1
+   },
+   {
+    "n": "Diamond Pick-Axe",
+    "q": 1
+   },
+   {
+    "n": "Dire Fleet Daredevil",
+    "q": 1
+   },
+   {
+    "n": "Disrupt Decorum",
+    "q": 1
+   },
+   {
+    "n": "Dragon Whisperer",
+    "q": 1
+   },
+   {
+    "n": "Dragonmaster Outcast",
+    "q": 1
+   },
+   {
+    "n": "Fellwar Stone",
+    "q": 1
+   },
+   {
+    "n": "Five-Alarm Fire",
+    "q": 1
+   },
+   {
+    "n": "Freya Crescent",
+    "q": 1
+   },
+   {
+    "n": "Fumiko the Lowblood",
+    "q": 1
+   },
+   {
+    "n": "Glittering Stockpile",
+    "q": 1
+   },
+   {
+    "n": "Goblin Glider",
+    "q": 1
+   },
+   {
+    "n": "Goblin Spymaster",
+    "q": 1
+   },
+   {
+    "n": "Goblin War Drums",
+    "q": 1
+   },
+   {
+    "n": "Goldhound",
+    "q": 1
+   },
+   {
+    "n": "Guild Artisan",
+    "q": 1
+   },
+   {
+    "n": "Hazoret, Godseeker",
+    "q": 1
+   },
+   {
+    "n": "Hope of Ghirapur",
+    "q": 1
+   },
+   {
+    "n": "Impetuous Sunchaser",
+    "q": 1
+   },
+   {
+    "n": "Inquisitorial Rosette",
+    "q": 1
+   },
+   {
+    "n": "Irreverent Gremlin",
+    "q": 1
+   },
+   {
+    "n": "Kari Zev, Skyship Raider",
+    "q": 1
+   },
+   {
+    "n": "Kazuul, Tyrant of the Cliffs",
+    "q": 1
+   },
+   {
+    "n": "Kyren Glider",
+    "q": 1
+   },
+   {
+    "n": "Loyal Apprentice",
+    "q": 1
+   },
+   {
+    "n": "Magda, the Hoardmaster",
+    "q": 1
+   },
+   {
+    "n": "Mana Flare",
+    "q": 1
+   },
+   {
+    "n": "Mind Stone",
+    "q": 1
+   },
+   {
+    "n": "Professional Face-Breaker",
+    "q": 1
+   },
+   {
+    "n": "Pyreheart Wolf",
+    "q": 1
+   },
+   {
+    "n": "Relic of Legends",
+    "q": 1
+   },
+   {
+    "n": "Rite of the Raging Storm",
+    "q": 1
+   },
+   {
+    "n": "Rohirrim Lancer",
+    "q": 1
+   },
+   {
+    "n": "Rust Harvester",
+    "q": 1
+   },
+   {
+    "n": "Sardian Avenger",
+    "q": 1
+   },
+   {
+    "n": "Shiny Impetus",
+    "q": 1
+   },
+   {
+    "n": "Skeleton Key",
+    "q": 1
+   },
+   {
+    "n": "Sol Ring",
+    "q": 1
+   },
+   {
+    "n": "Sol Talisman",
+    "q": 1
+   },
+   {
+    "n": "Sticky Fingers",
+    "q": 1
+   },
+   {
+    "n": "Subira, Tulzidi Caravanner",
+    "q": 1
+   },
+   {
+    "n": "Sundering Eruption // Volcanic Fissure",
+    "q": 1
+   },
+   {
+    "n": "Utvara Scalper",
+    "q": 1
+   },
+   {
+    "n": "Vandalblast",
+    "q": 1
+   },
+   {
+    "n": "Vengeful Ancestor",
+    "q": 1
+   },
+   {
+    "n": "Worn Powerstone",
+    "q": 1
+   },
+   {
+    "n": "Mountain",
+    "q": 35
+   }
+  ],
+  "sideboard": [],
+  "commanders": [
+   "Grenzo, Havoc Raiser"
+  ],
+  "colors": [
+   "R"
+  ],
+  "curve": [
+   1,
+   14,
+   26,
+   15,
+   4,
+   2,
+   2
+  ],
+  "avgCmc": 2.38,
+  "bracket": 2,
+  "priceUsd": 46.96,
+  "cover": "https://cards.scryfall.io/art_crop/front/a/b/aba981f9-ebc6-48ac-b768-557f632b82df.jpg?1783907070",
+  "created": "2026-11-19T20:04:10.576899+00:00",
+  "updated": "2026-11-19T20:04:10.576899+00:00"
  }
 ]
