@@ -30866,11 +30866,365 @@
   "name": "Phage the Untouchable",
   "category": "preto",
   "format": "commander",
-  "url": "https://magicfinder.app/deck/62af09de-aa6b-449a-bcf3-0f40b6ede066?ref=FU9P9UZN",
+  "url": "https://magicfinder.app/deck/1078cac4-aa5e-4d0b-b1aa-2ed06ddbddc6?ref=FU9P9UZN",
   "source": "MagicFinder",
-  "slug": null,
-  "cards": null,
-  "cover": "https://cards.scryfall.io/art_crop/front/d/4/d497a5a3-65fb-4c12-b3f2-8ce4cf4e0f6f.jpg?1783939355"
+  "slug": "phage-the-untouchable",
+  "cards": [
+   {
+    "n": "Arcane Signet",
+    "q": 1
+   },
+   {
+    "n": "Archenemy's Charm",
+    "q": 1
+   },
+   {
+    "n": "Archfiend of Depravity",
+    "q": 1
+   },
+   {
+    "n": "Bitterblossom",
+    "q": 1
+   },
+   {
+    "n": "Bojuka Bog",
+    "q": 1
+   },
+   {
+    "n": "Bolas's Citadel",
+    "q": 1
+   },
+   {
+    "n": "Cabal Coffers",
+    "q": 1
+   },
+   {
+    "n": "Cabal Stronghold",
+    "q": 1
+   },
+   {
+    "n": "Campfire",
+    "q": 1
+   },
+   {
+    "n": "Castle Locthwain",
+    "q": 1
+   },
+   {
+    "n": "Command Beacon",
+    "q": 1
+   },
+   {
+    "n": "Commander's Plate",
+    "q": 1
+   },
+   {
+    "n": "Crashing Drawbridge",
+    "q": 1
+   },
+   {
+    "n": "Crypt Ghast",
+    "q": 1
+   },
+   {
+    "n": "Damnation",
+    "q": 1
+   },
+   {
+    "n": "Dark Ritual",
+    "q": 1
+   },
+   {
+    "n": "Demonlord Belzenlok",
+    "q": 1
+   },
+   {
+    "n": "Deserted Temple",
+    "q": 1
+   },
+   {
+    "n": "Dread Presence",
+    "q": 1
+   },
+   {
+    "n": "Elbrus, the Binding Blade // Withengar Unbound",
+    "q": 1
+   },
+   {
+    "n": "Erebos, God of the Dead",
+    "q": 1
+   },
+   {
+    "n": "Expedition Map",
+    "q": 1
+   },
+   {
+    "n": "Feed the Swarm",
+    "q": 1
+   },
+   {
+    "n": "Grave Titan",
+    "q": 1
+   },
+   {
+    "n": "Gray Merchant of Asphodel",
+    "q": 1
+   },
+   {
+    "n": "Hagra Mauling // Hagra Broodpit",
+    "q": 1
+   },
+   {
+    "n": "Homeward Path",
+    "q": 1
+   },
+   {
+    "n": "Imp's Mischief",
+    "q": 1
+   },
+   {
+    "n": "Insatiable Avarice",
+    "q": 1
+   },
+   {
+    "n": "Inventors' Fair",
+    "q": 1
+   },
+   {
+    "n": "Invoke Despair",
+    "q": 1
+   },
+   {
+    "n": "Jet Medallion",
+    "q": 1
+   },
+   {
+    "n": "K'rrik, Son of Yawgmoth",
+    "q": 1
+   },
+   {
+    "n": "Kokusho, the Evening Star",
+    "q": 1
+   },
+   {
+    "n": "Lich's Mastery",
+    "q": 1
+   },
+   {
+    "n": "Lightning Greaves",
+    "q": 1
+   },
+   {
+    "n": "Liliana of the Dark Realms",
+    "q": 1
+   },
+   {
+    "n": "Mask of Griselbrand",
+    "q": 1
+   },
+   {
+    "n": "Minas Morgul, Dark Fortress",
+    "q": 1
+   },
+   {
+    "n": "Murderous Rider // Swift End",
+    "q": 1
+   },
+   {
+    "n": "Mutilate",
+    "q": 1
+   },
+   {
+    "n": "Myriad Landscape",
+    "q": 1
+   },
+   {
+    "n": "Necropotence",
+    "q": 1
+   },
+   {
+    "n": "Netherborn Altar",
+    "q": 1
+   },
+   {
+    "n": "Night's Whisper",
+    "q": 1
+   },
+   {
+    "n": "Nighthawk Scavenger",
+    "q": 1
+   },
+   {
+    "n": "Nirkana Revenant",
+    "q": 1
+   },
+   {
+    "n": "Nykthos, Shrine to Nyx",
+    "q": 1
+   },
+   {
+    "n": "Phage the Untouchable",
+    "q": 1
+   },
+   {
+    "n": "Phyrexian Arena",
+    "q": 1
+   },
+   {
+    "n": "Phyrexian Obliterator",
+    "q": 1
+   },
+   {
+    "n": "Platinum Angel",
+    "q": 1
+   },
+   {
+    "n": "Profane Transfusion",
+    "q": 1
+   },
+   {
+    "n": "Profane Tutor",
+    "q": 1
+   },
+   {
+    "n": "Reliquary Tower",
+    "q": 1
+   },
+   {
+    "n": "Rogue's Passage",
+    "q": 1
+   },
+   {
+    "n": "Sengir, the Dark Baron",
+    "q": 1
+   },
+   {
+    "n": "Shadowspear",
+    "q": 1
+   },
+   {
+    "n": "Shizo, Death's Storehouse",
+    "q": 1
+   },
+   {
+    "n": "Sign in Blood",
+    "q": 1
+   },
+   {
+    "n": "Snuff Out",
+    "q": 1
+   },
+   {
+    "n": "Sol Ring",
+    "q": 1
+   },
+   {
+    "n": "Solemn Simulacrum",
+    "q": 1
+   },
+   {
+    "n": "Sudden Spoiling",
+    "q": 1
+   },
+   {
+    "n": "Summon: Primal Odin",
+    "q": 1
+   },
+   {
+    "n": "Sundial of the Infinite",
+    "q": 1
+   },
+   {
+    "n": "Sunken Citadel",
+    "q": 1
+   },
+   {
+    "n": "Swamp",
+    "q": 18
+   },
+   {
+    "n": "The Black Gate",
+    "q": 1
+   },
+   {
+    "n": "The Soul Stone",
+    "q": 1
+   },
+   {
+    "n": "Torpor Orb",
+    "q": 1
+   },
+   {
+    "n": "Toxic Deluge",
+    "q": 1
+   },
+   {
+    "n": "Trailblazer's Boots",
+    "q": 1
+   },
+   {
+    "n": "Twilight Prophet",
+    "q": 1
+   },
+   {
+    "n": "Urborg, Tomb of Yawgmoth",
+    "q": 1
+   },
+   {
+    "n": "Varragoth, Bloodsky Sire",
+    "q": 1
+   },
+   {
+    "n": "Vedalken Orrery",
+    "q": 1
+   },
+   {
+    "n": "Vilis, Broker of Blood",
+    "q": 1
+   },
+   {
+    "n": "Vorpal Sword",
+    "q": 1
+   },
+   {
+    "n": "War Room",
+    "q": 1
+   },
+   {
+    "n": "Wayfarer's Bauble",
+    "q": 1
+   },
+   {
+    "n": "Witch's Cottage",
+    "q": 1
+   },
+   {
+    "n": "Zenos yae Galvus // Shinryu, Transcendent Rival",
+    "q": 1
+   }
+  ],
+  "sideboard": [],
+  "commanders": [
+   "Phage the Untouchable"
+  ],
+  "colors": [
+   "B"
+  ],
+  "curve": [
+   1,
+   9,
+   14,
+   9,
+   11,
+   4,
+   14
+  ],
+  "avgCmc": 3.56,
+  "bracket": 3,
+  "priceUsd": 783.47,
+  "cover": "https://cards.scryfall.io/art_crop/front/d/4/d497a5a3-65fb-4c12-b3f2-8ce4cf4e0f6f.jpg?1783939355",
+  "created": "2026-08-15T15:30:52.846064+00:00",
+  "updated": "2026-08-15T15:30:52.846064+00:00"
  },
  {
   "name": "Radioactive Man",
@@ -53150,11 +53504,387 @@
   "name": "Mr. House, President and CEO",
   "category": "mardu",
   "format": "commander",
-  "url": "https://magicfinder.app/deck/501bcb59-9f44-4585-8658-7ed44910051a?ref=FU9P9UZN",
+  "url": "https://magicfinder.app/deck/98dd2d1a-dfbd-4829-ab20-bb0ac81fdd80?ref=FU9P9UZN",
   "source": "MagicFinder",
-  "slug": null,
-  "cards": null,
-  "cover": "https://cards.scryfall.io/art_crop/front/2/3/23eb3cf7-c90d-4bfa-b125-4fbcb5614468.jpg?1783912421"
+  "slug": "mr-house-president-and-ceo",
+  "cards": [
+   {
+    "n": "Vault of Whispers",
+    "q": 1
+   },
+   {
+    "n": "Vault of the Archangel",
+    "q": 1
+   },
+   {
+    "n": "Caves of Koilos",
+    "q": 1
+   },
+   {
+    "n": "Clown Car",
+    "q": 1
+   },
+   {
+    "n": "Ancient Den",
+    "q": 1
+   },
+   {
+    "n": "Tainted Peak",
+    "q": 1
+   },
+   {
+    "n": "Underdark Rift",
+    "q": 1
+   },
+   {
+    "n": "Sulfurous Springs",
+    "q": 1
+   },
+   {
+    "n": "Battlefield Forge",
+    "q": 1
+   },
+   {
+    "n": "Great Furnace",
+    "q": 1
+   },
+   {
+    "n": "Mountain",
+    "q": 8
+   },
+   {
+    "n": "Swamp",
+    "q": 3
+   },
+   {
+    "n": "Smoldering Marsh",
+    "q": 1
+   },
+   {
+    "n": "Bojuka Bog",
+    "q": 1
+   },
+   {
+    "n": "Sundown Pass",
+    "q": 1
+   },
+   {
+    "n": "Plains",
+    "q": 4
+   },
+   {
+    "n": "Nomad Outpost",
+    "q": 1
+   },
+   {
+    "n": "Spire of Industry",
+    "q": 1
+   },
+   {
+    "n": "Command Tower",
+    "q": 1
+   },
+   {
+    "n": "Sol Ring",
+    "q": 1
+   },
+   {
+    "n": "Manifold Key",
+    "q": 1
+   },
+   {
+    "n": "Barbarian Class",
+    "q": 1
+   },
+   {
+    "n": "Dispatch",
+    "q": 1
+   },
+   {
+    "n": "Skullclamp",
+    "q": 1
+   },
+   {
+    "n": "Reconnaissance",
+    "q": 1
+   },
+   {
+    "n": "Strength-Testing Hammer",
+    "q": 1
+   },
+   {
+    "n": "Gamble",
+    "q": 1
+   },
+   {
+    "n": "Myrkul's Edict",
+    "q": 1
+   },
+   {
+    "n": "Idol of Oblivion",
+    "q": 1
+   },
+   {
+    "n": "Reprieve",
+    "q": 1
+   },
+   {
+    "n": "Boros Charm",
+    "q": 1
+   },
+   {
+    "n": "Brazen Dwarf",
+    "q": 1
+   },
+   {
+    "n": "Marionette Apprentice",
+    "q": 1
+   },
+   {
+    "n": "Contraband Livestock",
+    "q": 1
+   },
+   {
+    "n": "Delete",
+    "q": 1
+   },
+   {
+    "n": "Deadly Dispute",
+    "q": 1
+   },
+   {
+    "n": "Sword of Hours",
+    "q": 1
+   },
+   {
+    "n": "Reckless Fireweaver",
+    "q": 1
+   },
+   {
+    "n": "Liquimetal Torque",
+    "q": 1
+   },
+   {
+    "n": "Lightfoot Rogue",
+    "q": 1
+   },
+   {
+    "n": "Magda, Brazen Outlaw",
+    "q": 1
+   },
+   {
+    "n": "Treasure Map // Treasure Cove",
+    "q": 1
+   },
+   {
+    "n": "Share the Spoils",
+    "q": 1
+   },
+   {
+    "n": "Arcane Signet",
+    "q": 1
+   },
+   {
+    "n": "Tibalt's Trickery",
+    "q": 1
+   },
+   {
+    "n": "Untimely Malfunction",
+    "q": 1
+   },
+   {
+    "n": "Wyll, Blade of Frontiers",
+    "q": 1
+   },
+   {
+    "n": "Ingenious Artillerist",
+    "q": 1
+   },
+   {
+    "n": "Treasure Chest",
+    "q": 1
+   },
+   {
+    "n": "Component Pouch",
+    "q": 1
+   },
+   {
+    "n": "Maddening Hex",
+    "q": 1
+   },
+   {
+    "n": "Vexing Puzzlebox",
+    "q": 1
+   },
+   {
+    "n": "Circuits Act",
+    "q": 1
+   },
+   {
+    "n": "Anguished Unmaking",
+    "q": 1
+   },
+   {
+    "n": "Chaos Dragon",
+    "q": 1
+   },
+   {
+    "n": "Academy Manufactor",
+    "q": 1
+   },
+   {
+    "n": "Wyll's Reversal",
+    "q": 1
+   },
+   {
+    "n": "Jan Jansen, Chaos Crafter",
+    "q": 1
+   },
+   {
+    "n": "Kambal, Profiteering Mayor",
+    "q": 1
+   },
+   {
+    "n": "Nadier's Nightblade",
+    "q": 1
+   },
+   {
+    "n": "Losheel, Clockwork Scholar",
+    "q": 1
+   },
+   {
+    "n": "Luck Bobblehead",
+    "q": 1
+   },
+   {
+    "n": "Mahadi, Emporium Master",
+    "q": 1
+   },
+   {
+    "n": "Mastermind Plum",
+    "q": 1
+   },
+   {
+    "n": "Mr. House, President and CEO",
+    "q": 1
+   },
+   {
+    "n": "Crime Novelist",
+    "q": 1
+   },
+   {
+    "n": "Prosperous Partnership",
+    "q": 1
+   },
+   {
+    "n": "Professional Face-Breaker",
+    "q": 1
+   },
+   {
+    "n": "Hellish Rebuke",
+    "q": 1
+   },
+   {
+    "n": "Stridehangar Automaton",
+    "q": 1
+   },
+   {
+    "n": "Xorn",
+    "q": 1
+   },
+   {
+    "n": "Grim Hireling",
+    "q": 1
+   },
+   {
+    "n": "Comet, Stellar Pup",
+    "q": 1
+   },
+   {
+    "n": "Delina, Wild Mage",
+    "q": 1
+   },
+   {
+    "n": "Trading Post",
+    "q": 1
+   },
+   {
+    "n": "Night Shift of the Living Dead",
+    "q": 1
+   },
+   {
+    "n": "Clever Concealment",
+    "q": 1
+   },
+   {
+    "n": "Hoarding Ogre",
+    "q": 1
+   },
+   {
+    "n": "Clock of Omens",
+    "q": 1
+   },
+   {
+    "n": "Ruthless Technomancer",
+    "q": 1
+   },
+   {
+    "n": "Rose Room Treasurer",
+    "q": 1
+   },
+   {
+    "n": "Wand of Wonder",
+    "q": 1
+   },
+   {
+    "n": "Wear // Tear",
+    "q": 1
+   },
+   {
+    "n": "Goldspan Dragon",
+    "q": 1
+   },
+   {
+    "n": "The Deck of Many Things",
+    "q": 1
+   },
+   {
+    "n": "Ruinous Ultimatum",
+    "q": 1
+   },
+   {
+    "n": "Imskir Iron-Eater",
+    "q": 1
+   },
+   {
+    "n": "Organic Extinction",
+    "q": 1
+   }
+  ],
+  "sideboard": [],
+  "commanders": [
+   "Mr. House, President and CEO"
+  ],
+  "colors": [
+   "W",
+   "B",
+   "R"
+  ],
+  "curve": [
+   1,
+   8,
+   19,
+   25,
+   11,
+   2,
+   3
+  ],
+  "avgCmc": 2.9,
+  "bracket": 3,
+  "priceUsd": 227.37,
+  "cover": "https://cards.scryfall.io/art_crop/front/2/3/23eb3cf7-c90d-4bfa-b125-4fbcb5614468.jpg?1783912421",
+  "created": "2026-08-25T14:01:27.781851+00:00",
+  "updated": "2026-08-25T14:01:27.781851+00:00"
  },
  {
   "name": "Neriv, Heart of the Storm",
