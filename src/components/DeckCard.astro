@@ -1,0 +1,27 @@
+---
+import Pips from './Pips.astro';
+import { type Deck, deckHref, cardCount, category } from '../lib/data';
+interface Props { deck: Deck; eager?: boolean }
+const { deck, eager = false } = Astro.props;
+const href = deckHref(deck);
+const external = !deck.slug;
+const colors = deck.colors?.length ? deck.colors : (category(deck.category)?.colors ?? '').split('').filter(Boolean);
+const count = cardCount(deck);
+const artSmall = deck.cover?.replace('/art_crop/', '/art_crop/');
+---
+<a class="deck-card" href={href} {...(external ? { target: '_blank', rel: 'noopener' } : {})}
+   data-name={deck.name.toLowerCase()} data-colors={colors.join('') || 'C'} data-cat={deck.category}>
+  <div class="deck-card__art">
+    {artSmall ? <img src={artSmall} alt="" width="626" height="457" loading={eager ? 'eager' : 'lazy'} decoding="async" /> : null}
+    {deck.format === 'commander' && <Pips colors={colors} />}
+  </div>
+  {external && <span class="deck-card__ext">{deck.source} ↗</span>}
+  <div class="deck-card__body">
+    <h3 class="deck-card__name">{deck.name}</h3>
+    <div class="deck-card__meta">
+      {count ? <span>{count} cartas</span> : <span>Lista no {deck.source}</span>}
+      {deck.bracket ? <span>Bracket {deck.bracket}</span> : null}
+      {deck.avgCmc ? <span>CMC {deck.avgCmc.toFixed(2).replace('.', ',')}</span> : null}
+    </div>
+  </div>
+</a>

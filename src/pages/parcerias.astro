@@ -1,0 +1,76 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import Icon from '../components/Icon.astro';
+import { site, partners } from '../data/site';
+---
+<Base title="Cupons e parcerias: desconto em cartas de Magic com o cupom TROY"
+  description="Lojas e marcas que a Troy usa e recomenda. Use o cupom TROY e economize em cartas de Magic, acessórios e RPG.">
+  <header class="page-hero">
+    <div class="wrap">
+      <Breadcrumbs items={[{ name: 'Parcerias' }]} />
+      <h1>Cupons e parcerias</h1>
+      <p class="lead">Essas são as lojas e marcas que eu uso e recomendo. Usando meu cupom você economiza e ainda fortalece o meu conteúdo.</p>
+      <div class="coupon">
+        <span class="coupon__label">Seu cupom</span>
+        <code class="coupon__code">{site.coupon}</code>
+        <button class="btn btn--sm" type="button" data-copy={site.coupon}><Icon name="copy" size={16} /> <span>Copiar</span></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="section section--tight">
+    <div class="wrap">
+      <h2 class="sr-only">Parceiros</h2>
+      <ul class="partners">
+        {partners.map((p) => (
+          <li>
+            <a class="partner" href={p.url} target="_blank" rel="noopener sponsored">
+              <img src={p.logo} alt="" width="400" height="400" loading="lazy" />
+              <div class="partner__body">
+                <h3>{p.name}</h3>
+                {p.note && <p>{p.note}</p>}
+                <span class="partner__go">Visitar <Icon name="external" size={14} /></span>
+              </div>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section--red">
+    <div class="wrap cta">
+      <div>
+        <span class="kicker kicker--bone">Parcerias</span>
+        <h2 class="h2">Sua marca no meu command zone?</h2>
+        <p>Decks novos toda semana no YouTube, Instagram e TikTok, pra uma galera que vive Magic, metal e RPG.</p>
+      </div>
+      <a class="btn btn--bone" href={`mailto:${site.email}?subject=Parceria`}><Icon name="mail" /> Falar com a Troy</a>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .coupon { display: inline-flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-top: 26px; padding: 12px 12px 12px 20px; border: 2px dashed var(--red-hot); border-radius: var(--radius); background: rgb(160 20 20 / .12); }
+  .coupon__label { font: 400 1.3rem/1 var(--font-hand); color: var(--muted); }
+  .coupon__code { font: 400 2rem/1 var(--font-display); color: #fff; letter-spacing: .08em; }
+  .partners { list-style: none; margin: 0; padding: 0; display: grid; gap: 18px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr)); }
+  .partner { display: flex; flex-direction: column; height: 100%; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; text-decoration: none; transition: transform .2s, border-color .2s; }
+  .partner:hover { transform: translateY(-3px); border-color: var(--red-hot); color: inherit; }
+  .partner img { aspect-ratio: 1; object-fit: cover; width: 100%; }
+  .partner__body { padding: 16px 18px 18px; display: grid; gap: 6px; flex: 1; align-content: start; }
+  .partner h3 { font-size: 1.2rem; margin: 0; text-transform: none; letter-spacing: .01em; }
+  .partner p { margin: 0; color: var(--muted); font-size: .95rem; }
+  .partner__go { margin-top: 6px; display: inline-flex; align-items: center; gap: 6px; font: 700 .85rem/1 var(--font-label); letter-spacing: .12em; text-transform: uppercase; color: var(--red-hot); }
+  .cta { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px; }
+  .cta p { margin: 0; max-width: 56ch; }
+  .kicker--bone { color: var(--bone); }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>('[data-copy]').forEach((b) => b.addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText(b.dataset.copy!); } catch {}
+    const s = b.querySelector('span')!; s.textContent = 'Copiado!'; setTimeout(() => (s.textContent = 'Copiar'), 2000);
+  }));
+</script>

@@ -1,0 +1,16 @@
+{
+  "name": "iamtroy-site",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "import-decks": "node scripts/import-decks.mjs"
+  },
+  "dependencies": {
+    "astro": "5.18.2",
+    "@astrojs/sitemap": "3.6.0"
+  }
+}

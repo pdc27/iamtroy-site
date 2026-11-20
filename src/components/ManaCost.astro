@@ -1,0 +1,26 @@
+---
+interface Props { cost?: string }
+const { cost = '' } = Astro.props;
+const syms = [...cost.split('//')[0].matchAll(/\{([^}]+)\}/g)].map((m) => m[1]);
+const color = (s: string) => {
+  const c = s.replace(/[^WUBRGC]/g, '');
+  return c ? c[0] : 'N';
+};
+const text = (s: string) => (/^[WUBRG]$/.test(s) ? '' : s.includes('/') ? '' : s === 'C' ? '◇' : s);
+const style = (s: string) => {
+  const parts = s.split('/').filter((p) => /^[WUBRG]$/.test(p));
+  if (parts.length === 2) {
+    const v = (p: string) => `var(--mana-${p.toLowerCase()})`;
+    return `background:linear-gradient(135deg, ${v(parts[0])} 50%, ${v(parts[1])} 50%)`;
+  }
+  return undefined;
+};
+---
+{syms.length > 0 && (
+  <span class="cost" aria-label={`Custo ${syms.join(' ')}`}>
+    {syms.map((s) => <span class="pip" data-c={color(s)} style={style(s)}>{text(s)}</span>)}
+  </span>
+)}
+<style>
+  .cost { display: inline-flex; gap: 2px; font-size: .95rem; flex: none; }
+</style>

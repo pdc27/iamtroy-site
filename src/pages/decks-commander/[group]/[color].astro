@@ -1,0 +1,20 @@
+---
+import CategoryView from '../../../components/CategoryView.astro';
+import { colorCategories, category, decksIn, colorLabel, GROUPS } from '../../../lib/data';
+
+export function getStaticPaths() {
+  return colorCategories.filter((c) => c.group !== 'top').map((c) => ({ params: { group: c.group, color: c.slug } }));
+}
+const { group, color } = Astro.params;
+const cat = category(color!);
+const g = GROUPS.find((x) => x.slug === group)!;
+const list = decksIn(color!);
+const isMono = group === 'mono-colored';
+const english: Record<string, string> = { azul: 'Mono Blue', branco: 'Mono White', preto: 'Mono Black', vermelho: 'Mono Red', verde: 'Mono Green', incolor: 'Colorless' };
+const h1 = isMono ? `Decks Commander ${cat.name.toLowerCase()} (${english[cat.slug]})` : `Decks Commander ${cat.name}`;
+const title = isMono
+  ? `Decks de Commander ${cat.name} (${english[cat.slug]}): ${list.length} listas`
+  : `Decks de Commander ${cat.name} (${colorLabel(cat.colors)}): ${list.length} listas`;
+---
+<CategoryView cat={cat} decks={list} title={title} h1={h1}
+  crumbs={[{ name: 'Commander', href: '/decks-commander' }, { name: g.name, href: `/decks-commander/${g.slug}` }, { name: cat.name }]} />

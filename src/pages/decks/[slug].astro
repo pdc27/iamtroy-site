@@ -1,0 +1,261 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import DeckCard from '../../components/DeckCard.astro';
+import Pips from '../../components/Pips.astro';
+import ManaCost from '../../components/ManaCost.astro';
+import Icon from '../../components/Icon.astro';
+import {
+  type Deck, decks, category, categoryPath, colorLabel, groupDeck, cardCount, deckText, commanderImage, decksIn, GROUPS,
+} from '../../lib/data';
+import { site } from '../../data/site';
+
+export function getStaticPaths() {
+  return decks.filter((d) => d.slug).map((d) => ({ params: { slug: d.slug! }, props: { deck: d } }));
+}
+const { deck } = Astro.props as { deck: Deck };
+const cat = category(deck.category);
+const group = GROUPS.find((g) => g.slug === cat.group);
+const colors = deck.colors?.length ? deck.colors : (cat.colors ?? '').split('');
+const colorText = deck.format === 'pauper' ? 'Pauper' : colorLabel(colors.join('') || 'C');
+const groups = groupDeck(deck);
+const total = cardCount(deck);
+const text = deckText(deck);
+const cmdImg = commanderImage(deck);
+const curve = deck.curve ?? [];
+const curveMax = Math.max(1, ...curve);
+const related = decksIn(deck.category).filter((d) => d !== deck).slice(0, 4);
+const isCommander = deck.format === 'commander';
+const fmt = isCommander ? 'Commander' : 'Pauper';
+const cmc = deck.avgCmc ? deck.avgCmc.toFixed(2).replace('.', ',') : null;
+const landCount = groups.find((g) => g.key === 'Land')?.count ?? 0;
+const creatureCount = groups.find((g) => g.key === 'Creature')?.count ?? 0;
+
+const crumbs = [
+  { name: 'Commander', href: '/decks-commander' },
+  ...(group ? [{ name: group.name, href: `/decks-commander/${group.slug}` }] : []),
+  { name: cat.name, href: categoryPath(cat.slug) },
+  { name: deck.name },
+];
+const title = `${deck.name}: deck de ${fmt} ${cat.name} (lista completa)`;
+const description = `Lista completa do deck de ${fmt} de ${deck.name} (${colorText}): ${total} cartas, ${creatureCount} criaturas, ${landCount} terrenos${cmc ? `, custo médio ${cmc}` : ''}. Copie a lista e monte o seu.`;
+const pageUrl = new URL(`/decks/${deck.slug}`, site.domain).href;
+const ld = {
+  '@context': 'https://schema.org', '@type': 'CreativeWork', name: `${deck.name} — deck de ${fmt}`, url: pageUrl,
+  inLanguage: 'pt-BR', genre: `Magic: The Gathering ${fmt}`, description,
+  author: { '@type': 'Person', name: 'Troy', url: site.domain },
+  ...(deck.created ? { datePublished: deck.created } : {}), ...(deck.updated ? { dateModified: deck.updated } : {}),
+  ...(deck.cover ? { image: deck.cover } : {}),
+  about: { '@type': 'Thing', name: deck.commanders?.[0] ?? deck.name },
+};
+---
+<Base title={title} description={description} image={deck.cover ?? undefined} type="article" jsonLd={ld}>
+  <header class="dhero">
+    {deck.cover && <img class="dhero__bg" src={deck.cover} alt="" width="626" height="457" fetchpriority="high" />}
+    <div class="wrap dhero__inner">
+      <div class="dhero__copy">
+        <Breadcrumbs items={crumbs} />
+        <p class="dhero__fmt"><Pips colors={colors.length ? colors : ['C']} size="1.3rem" /> {fmt} · {colorText}</p>
+        <h1>{deck.name}</h1>
+        <dl class="dstats">
+          <div><dt>Cartas</dt><dd>{total}</dd></div>
+          {cmc && <div><dt>Custo médio</dt><dd>{cmc}</dd></div>}
+          {deck.bracket && <div><dt>Bracket</dt><dd>{deck.bracket}</dd></div>}
+          {deck.priceUsd && <div><dt>Preço estimado</dt><dd>US$ {Math.round(deck.priceUsd)}</dd></div>}
+        </dl>
+        <div class="dactions">
+          <button class="btn" type="button" data-copy><Icon name="copy" /> <span>Copiar lista</span></button>
+          <a class="btn btn--ghost" href={deck.url} target="_blank" rel="noopener sponsored"><Icon name="external" /> Abrir no {deck.source}</a>
+          <button class="btn btn--ghost" type="button" data-download={`${deck.slug}.txt`}><Icon name="download" /> .txt</button>
+        </div>
+        <p class="hint">A lista copiada funciona no MagicFinder, Moxfield, Archidekt, LigaMagic e MTG Arena.</p>
+      </div>
+      {cmdImg && (
+        <figure class="dhero__card">
+          <img src={cmdImg} alt={`Carta ${deck.commanders?.[0] ?? deck.name}`} width="488" height="680" />
+        </figure>
+      )}
+    </div>
+  </header>
+
+  <section class="section section--tight">
+    <div class="wrap dgrid">
+      <aside class="dside">
+        {curve.length > 0 && (
+          <div class="panel">
+            <h2 class="ph">Curva de mana</h2>
+            <ol class="curve" aria-label="Quantidade de cartas por custo de mana (sem terrenos)">
+              {curve.map((v, i) => (
+                <li style={`--h:${(v / curveMax) * 100}%`}><span class="curve__v">{v}</span><span class="curve__bar" /><span class="curve__k">{i === curve.length - 1 ? `${i}+` : i}</span></li>
+              ))}
+            </ol>
+          </div>
+        )}
+        <div class="panel">
+          <h2 class="ph">Tipos</h2>
+          <ul class="types">
+            {groups.map((g) => <li><a href={`#t-${g.key.toLowerCase()}`}>{g.label}</a><span>{g.count}</span></li>)}
+          </ul>
+        </div>
+        <div class="panel panel--red">
+          <p><strong>Montando esse deck?</strong> Use o cupom <strong class="cpn">{site.coupon}</strong> nas lojas parceiras.</p>
+          <a class="btn btn--bone btn--sm" href="/parcerias">Ver lojas</a>
+        </div>
+      </aside>
+
+      <div class="dlist">
+        <h2 class="sr-only">Lista de cartas</h2>
+        {groups.map((g) => (
+          <section class="tgroup" id={`t-${g.key.toLowerCase()}`}>
+            <h3>{g.label} <span>({g.count})</span></h3>
+            <ul>
+              {g.cards.map((c) => (
+                <li>
+                  <span class="q">{c.q}</span>
+                  <a href={c.info?.url ?? `https://scryfall.com/search?q=${encodeURIComponent(`!"${c.n}"`)}`} target="_blank" rel="noopener" data-img={c.info?.img ?? undefined}>{c.n}</a>
+                  <ManaCost cost={c.info?.mana} />
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))}
+        {deck.sideboard && deck.sideboard.length > 0 && (
+          <section class="tgroup">
+            <h3>Sideboard <span>({deck.sideboard.reduce((s, c) => s + c.q, 0)})</span></h3>
+            <ul>{deck.sideboard.map((c) => <li><span class="q">{c.q}</span><span>{c.n}</span></li>)}</ul>
+          </section>
+        )}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--panel section--tight">
+    <div class="wrap about">
+      <h2>Sobre o deck de {deck.name}</h2>
+      <p>
+        Este é o deck de {fmt} de <strong>{deck.name}</strong> que eu montei pros meus vídeos, nas cores
+        <a href={categoryPath(cat.slug)}>{cat.name}</a> ({colorText}). São {total} cartas, com {creatureCount} criaturas e {landCount} terrenos{cmc ? `, e custo médio de mana de ${cmc}` : ''}{deck.bracket ? `. Pelo sistema de brackets do Commander, ele fica no bracket ${deck.bracket}` : ''}.
+      </p>
+      <p>Copie a lista com o botão lá em cima e cole no seu app de deckbuilding favorito, ou abra direto no {deck.source}.</p>
+    </div>
+  </section>
+
+  {related.length > 0 && (
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div><span class="kicker">Mesmas cores</span><h2 class="h2">Mais decks {cat.name}</h2></div>
+          <a class="btn btn--ghost btn--sm" href={categoryPath(cat.slug)}>Ver todos <Icon name="arrow" size={16} /></a>
+        </div>
+        <div class="deck-grid">{related.map((d) => <DeckCard deck={d} />)}</div>
+      </div>
+    </section>
+  )}
+
+  <div class="preview" id="preview" aria-hidden="true"><img alt="" width="244" height="340" /></div>
+  <textarea id="decktext" hidden>{text}</textarea>
+</Base>
+
+<style>
+  .dhero { position: relative; overflow: hidden; border-bottom: 1px solid var(--line); padding: clamp(28px, 4vw, 56px) 0 clamp(36px, 5vw, 64px); }
+  .dhero__bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(2px) saturate(1.1); opacity: .32; transform: scale(1.04); }
+  .dhero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, var(--bg) 20%, rgb(12 10 10 / .75) 60%, rgb(12 10 10 / .45)), linear-gradient(0deg, var(--bg), transparent 40%); }
+  .dhero__inner { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: center; }
+  .dhero__fmt { display: flex; align-items: center; gap: 12px; margin: 22px 0 6px; font: 700 .95rem/1 var(--font-label); letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
+  .dhero h1 { font-size: clamp(2.2rem, 5.5vw, 4.2rem); margin: 8px 0 24px; overflow-wrap: anywhere; }
+  .dstats { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 26px; }
+  .dstats div { background: rgb(26 20 20 / .8); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 16px; min-width: 110px; }
+  .dstats dt { font: 700 .72rem/1 var(--font-label); letter-spacing: .16em; text-transform: uppercase; color: var(--faint); }
+  .dstats dd { margin: 6px 0 0; font: 700 1.5rem/1 var(--font-label); color: var(--bone); }
+  .dactions { display: flex; flex-wrap: wrap; gap: 10px; }
+  .hint { margin: 14px 0 0; font-size: .9rem; color: var(--faint); }
+  .dhero__card { margin: 0; width: clamp(200px, 22vw, 280px); rotate: 3deg; }
+  .dhero__card img { border-radius: 4.75% / 3.5%; box-shadow: 0 30px 60px -20px #000, 0 0 0 1px rgb(255 255 255 / .06); }
+
+  .dgrid { display: grid; grid-template-columns: 280px 1fr; gap: clamp(24px, 4vw, 48px); align-items: start; }
+  .dside { position: sticky; top: 88px; display: grid; gap: 14px; }
+  .panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; }
+  .panel--red { background: linear-gradient(150deg, var(--red-deep), #3d0707); border-color: #5a1010; }
+  .panel--red p { margin-bottom: 14px; }
+  .cpn { color: #fff; background: rgb(0 0 0 / .3); padding: 1px 6px; border-radius: 4px; letter-spacing: .08em; }
+  .ph { font: 700 .85rem/1 var(--font-label); letter-spacing: .16em; text-transform: uppercase; color: var(--faint); margin-bottom: 14px; }
+  .curve { list-style: none; margin: 0; padding: 0; display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 6px; height: 120px; align-items: end; }
+  .curve li { display: grid; grid-template-rows: auto 1fr auto; height: 100%; align-items: end; text-align: center; gap: 4px; }
+  .curve__bar { display: block; height: var(--h); min-height: 2px; background: linear-gradient(180deg, var(--red-hot), var(--red)); border-radius: 3px 3px 0 0; }
+  .curve__v, .curve__k { font: 700 .8rem/1 var(--font-label); color: var(--muted); }
+  .curve__k { color: var(--faint); }
+  .types { list-style: none; margin: 0; padding: 0; }
+  .types li { display: flex; justify-content: space-between; border-bottom: 1px solid var(--line); }
+  .types li:last-child { border: 0; }
+  .types a { text-decoration: none; padding: 8px 0; flex: 1; }
+  .types a:hover { color: var(--red-hot); }
+  .types span { padding: 8px 0; color: var(--faint); font-weight: 600; }
+
+  .dlist { columns: 2 300px; column-gap: 32px; }
+  .tgroup { break-inside: avoid; margin-bottom: 28px; scroll-margin-top: 90px; }
+  .tgroup h3 { font-size: 1.05rem; letter-spacing: .1em; color: var(--bone); border-bottom: 2px solid var(--red); padding-bottom: 8px; margin-bottom: 6px; }
+  .tgroup h3 span { color: var(--faint); }
+  .tgroup ul { list-style: none; margin: 0; padding: 0; }
+  .tgroup li { display: flex; align-items: center; gap: 10px; padding: 5px 0; border-bottom: 1px solid rgb(51 41 42 / .6); font-size: 1rem; }
+  .tgroup .q { width: 1.4em; color: var(--faint); font: 700 .95rem/1 var(--font-label); flex: none; }
+  .tgroup a { text-decoration: none; flex: 1; min-width: 0; }
+  .tgroup a:hover { color: var(--red-hot); }
+  .tgroup :global(.cost) { margin-left: auto; }
+
+  .about { max-width: 820px; }
+  .about h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); }
+  .about p { color: var(--muted); }
+
+  .preview { position: fixed; z-index: 90; pointer-events: none; opacity: 0; transition: opacity .12s; width: 244px; }
+  .preview img { border-radius: 12px; box-shadow: 0 20px 40px -10px #000; }
+  .preview.on { opacity: 1; }
+
+  @media (max-width: 900px) {
+    .dhero__inner { grid-template-columns: 1fr; }
+    .dhero__card { display: none; }
+    .dgrid { grid-template-columns: 1fr; }
+    .dside { position: static; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  }
+  @media (hover: none) { .preview { display: none; } }
+</style>
+
+<script>
+  // Copiar lista
+  const btn = document.querySelector<HTMLButtonElement>('[data-copy]');
+  const txt = (document.getElementById('decktext') as HTMLTextAreaElement)?.value ?? '';
+  btn?.addEventListener('click', async () => {
+    const label = btn.querySelector('span')!;
+    try {
+      await navigator.clipboard.writeText(txt);
+      label.textContent = 'Lista copiada!';
+    } catch {
+      const ta = document.createElement('textarea');
+      ta.value = txt; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove();
+      label.textContent = 'Lista copiada!';
+    }
+    setTimeout(() => (label.textContent = 'Copiar lista'), 2200);
+  });
+
+  // Baixar .txt
+  document.querySelector<HTMLButtonElement>('[data-download]')?.addEventListener('click', (e) => {
+    const b = e.currentTarget as HTMLButtonElement;
+    const url = URL.createObjectURL(new Blob([txt], { type: 'text/plain;charset=utf-8' }));
+    const a = Object.assign(document.createElement('a'), { href: url, download: b.dataset.download });
+    a.click(); setTimeout(() => URL.revokeObjectURL(url), 1000);
+  });
+
+  // Preview da carta ao passar o mouse
+  const pv = document.getElementById('preview')!;
+  const img = pv.querySelector('img')!;
+  if (matchMedia('(hover: hover)').matches) {
+    document.querySelectorAll<HTMLAnchorElement>('a[data-img]').forEach((a) => {
+      a.addEventListener('mouseenter', () => { img.src = a.dataset.img!; pv.classList.add('on'); });
+      a.addEventListener('mouseleave', () => pv.classList.remove('on'));
+      a.addEventListener('mousemove', (e) => {
+        const x = e.clientX + 24 + 244 > innerWidth ? e.clientX - 268 : e.clientX + 24;
+        const y = Math.min(e.clientY - 60, innerHeight - 360);
+        pv.style.transform = `translate(${x}px, ${Math.max(8, y)}px)`;
+      });
+    });
+  }
+</script>

@@ -1,0 +1,10 @@
+---
+interface Props { colors?: string[] | string | null; size?: string }
+const { colors, size } = Astro.props;
+const list = (Array.isArray(colors) ? colors : (colors ?? '').split('')).filter(Boolean);
+const names: Record<string, string> = { W: 'Branco', U: 'Azul', B: 'Preto', R: 'Vermelho', G: 'Verde', C: 'Incolor' };
+const shown = list.length ? list : ['C'];
+---
+<span class="pips" style={size ? `font-size:${size}` : undefined} role="img" aria-label={`Cores: ${shown.map((c) => names[c]).join(', ')}`}>
+  {shown.map((c) => <span class="pip" data-c={c} />)}
+</span>

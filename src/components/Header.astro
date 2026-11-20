@@ -1,0 +1,67 @@
+---
+import Icon from './Icon.astro';
+import { apps } from '../data/site';
+const path = Astro.url.pathname;
+const tabs = apps.find((a) => a.id === 'tabs')!;
+const bandway = apps.find((a) => a.id === 'bandway')!;
+const links = [
+  { href: '/decks-commander', label: 'Commander' },
+  { href: '/decks-pauper', label: 'Pauper' },
+  { href: tabs.url || '/#apps', label: 'Tabs', external: !!tabs.url },
+  { href: '/parcerias', label: 'Parcerias' },
+];
+const isActive = (href: string) => href !== '/' && !href.startsWith('http') && !href.startsWith('/#') && (path === href || path.startsWith(href + '/') || (href === '/decks-commander' && path.startsWith('/decks/')));
+---
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a href="/" class="brand" aria-label="Troy, página inicial">
+      <img src="/img/logo-troy.webp" alt="" width="96" height="54" />
+    </a>
+
+    <nav class="nav" aria-label="Principal">
+      <ul>
+        {links.map((l) => (
+          <li><a href={l.href} aria-current={isActive(l.href) ? 'page' : undefined} {...(l.external ? { target: '_blank', rel: 'noopener' } : {})}>{l.label}</a></li>
+        ))}
+      </ul>
+    </nav>
+
+    <a class="btn btn--sm btn--bone bandway-btn" href={bandway.url || '/#apps'} {...(bandway.url ? { target: '_blank', rel: 'noopener' } : {})}>
+      <Icon name="bolt" size={16} /> BandWay
+    </a>
+
+    <details class="mnav">
+      <summary aria-label="Abrir menu"><Icon name="menu" size={26} /></summary>
+      <div class="mnav__panel">
+        <ul>
+          <li><a href="/">Início</a></li>
+          {links.map((l) => <li><a href={l.href} {...(l.external ? { target: '_blank', rel: 'noopener' } : {})}>{l.label}</a></li>)}
+        </ul>
+        <a class="btn btn--bone" href={bandway.url || '/#apps'}><Icon name="bolt" size={16} /> BandWay</a>
+      </div>
+    </details>
+  </div>
+</header>
+
+<style>
+  .site-header { position: sticky; top: 0; z-index: 50; background: rgb(12 10 10 / .82); backdrop-filter: blur(12px) saturate(140%); -webkit-backdrop-filter: blur(12px) saturate(140%); border-bottom: 1px solid var(--line); }
+  .site-header__inner { display: flex; align-items: center; gap: 24px; min-height: 68px; }
+  .brand img { width: 84px; height: auto; transition: transform .2s; }
+  .brand:hover img { transform: rotate(-3deg) scale(1.04); }
+  .nav { margin-left: auto; }
+  .nav ul { list-style: none; display: flex; gap: 4px; margin: 0; padding: 0; }
+  .nav a { display: block; padding: 10px 14px; font: 700 1rem/1 var(--font-label); letter-spacing: .12em; text-transform: uppercase; text-decoration: none; color: var(--muted); border-radius: 4px; position: relative; }
+  .nav a:hover { color: #fff; }
+  .nav a[aria-current='page'] { color: #fff; }
+  .nav a[aria-current='page']::after { content: ''; position: absolute; left: 14px; right: 14px; bottom: 2px; height: 2px; background: var(--red-hot); }
+  .mnav { display: none; margin-left: auto; position: static; }
+  .mnav summary { list-style: none; cursor: pointer; width: 48px; height: 48px; display: grid; place-items: center; border-radius: var(--radius); }
+  .mnav summary::-webkit-details-marker { display: none; }
+  .mnav__panel { position: absolute; left: 0; right: 0; top: 100%; background: var(--bg); border-bottom: 1px solid var(--line); padding: 8px var(--gutter) 24px; display: grid; gap: 16px; }
+  .mnav__panel ul { list-style: none; margin: 0; padding: 0; }
+  .mnav__panel li a { display: block; padding: 14px 0; border-bottom: 1px solid var(--line); font: 700 1.3rem/1 var(--font-label); letter-spacing: .08em; text-transform: uppercase; text-decoration: none; }
+  @media (max-width: 820px) {
+    .nav, .bandway-btn { display: none; }
+    .mnav { display: block; }
+  }
+</style>

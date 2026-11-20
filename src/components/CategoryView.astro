@@ -1,0 +1,86 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from './Breadcrumbs.astro';
+import DeckCard from './DeckCard.astro';
+import Prose from './Prose.astro';
+import Pips from './Pips.astro';
+import { type Category, type Deck, colorLabel, categorySummary, categoryPath, GROUPS } from '../lib/data';
+import { site } from '../data/site';
+
+interface Props {
+  cat: Category;
+  decks: Deck[];
+  title: string;
+  h1: string;
+  crumbs: { name: string; href?: string }[];
+  description?: string;
+}
+const { cat, decks, title, h1, crumbs, description } = Astro.props;
+const first = cat.intro.find((b) => b.type === 'p') as { text: string } | undefined;
+const rest = cat.intro.filter((b) => b !== first);
+const withList = decks.filter((d) => d.slug).length;
+const ld = {
+  '@context': 'https://schema.org', '@type': 'CollectionPage', name: h1, inLanguage: 'pt-BR',
+  url: new URL(categoryPath(cat.slug), site.domain).href,
+  mainEntity: {
+    '@type': 'ItemList', numberOfItems: decks.length,
+    itemListElement: decks.map((d, i) => ({ '@type': 'ListItem', position: i + 1, name: d.name, url: d.slug ? new URL(`/decks/${d.slug}`, site.domain).href : d.url })),
+  },
+};
+---
+<Base title={title} description={description ?? categorySummary(cat)} jsonLd={ld}>
+  <header class="page-hero">
+    <div class="wrap">
+      <Breadcrumbs items={crumbs} />
+      <h1>{h1}</h1>
+      {cat.colors && <p class="sub"><Pips colors={cat.colors} size="1.3rem" /> <span>{colorLabel(cat.colors)}</span></p>}
+      {first && <p class="lead">{first.text}</p>}
+      <p class="count">{decks.length} decks{withList ? ` · ${withList} com lista completa no site` : ''}</p>
+    </div>
+  </header>
+
+  <section class="section section--tight">
+    <div class="wrap">
+      <h2 class="sr-only">Decks</h2>
+      <div class="deck-grid">
+        {decks.map((d, i) => <DeckCard deck={d} eager={i < 4} />)}
+      </div>
+    </div>
+  </section>
+
+  {rest.length > 0 && (
+    <section class="section section--panel about">
+      <div class="wrap about__grid">
+        <div>
+          <span class="kicker">Guia rápido</span>
+          <h2 class="h2">Sobre {cat.name}</h2>
+        </div>
+        <Prose blocks={rest} />
+      </div>
+    </section>
+  )}
+
+  <slot />
+
+  {cat.group !== 'pauper' && (
+    <section class="section section--tight">
+      <div class="wrap">
+        <h2 class="h3">Explore outras cores</h2>
+        <div class="other">
+          {GROUPS.map((g) => <a class="chip" href={`/decks-commander/${g.slug}`}>{g.name}</a>)}
+          <a class="chip" href="/decks-commander/wubrg">WUBRG</a>
+          <a class="chip" href="/decks-pauper">Pauper</a>
+        </div>
+      </div>
+    </section>
+  )}
+</Base>
+
+<style>
+  .sub { display: flex; align-items: center; gap: 12px; font: 700 1rem/1 var(--font-label); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-bottom: 18px; }
+  .count { margin: 18px 0 0; font: 600 .9rem/1 var(--font-label); letter-spacing: .12em; text-transform: uppercase; color: var(--faint); }
+  .about__grid { display: grid; grid-template-columns: minmax(220px, 1fr) 2fr; gap: clamp(24px, 5vw, 72px); }
+  .h3 { font: 700 1.1rem/1 var(--font-label); letter-spacing: .14em; text-transform: uppercase; color: var(--faint); margin-bottom: 16px; }
+  .other { display: flex; flex-wrap: wrap; gap: 10px; }
+  @media (max-width: 760px) { .about__grid { grid-template-columns: 1fr; } }
+</style>

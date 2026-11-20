@@ -1,0 +1,12 @@
+---
+import type { Block } from '../lib/data';
+interface Props { blocks: Block[] }
+const { blocks } = Astro.props;
+---
+<div class="prose">
+  {blocks.map((b) =>
+    b.type === 'ul' ? <ul>{b.items.map((i) => <li>{i}</li>)}</ul>
+    : b.type === 'h3' ? <h3>{b.text}</h3>
+    : <p>{b.text}</p>
+  )}
+</div>

@@ -1,0 +1,21 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Página não encontrada" noindex>
+  <section class="section">
+    <div class="wrap nf">
+      <span class="kicker">Erro 404</span>
+      <h1 class="display">Essa carta foi exilada.</h1>
+      <p class="lead">A página que você procurou não existe (ou mudou de lugar). Bora voltar pro jogo?</p>
+      <div class="actions">
+        <a class="btn" href="/decks-commander">Ver decks de Commander</a>
+        <a class="btn btn--ghost" href="/">Página inicial</a>
+      </div>
+    </div>
+  </section>
+</Base>
+<style>
+  .nf { min-height: 50vh; display: grid; align-content: center; justify-items: start; }
+  .nf h1 { margin: 16px 0; }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; }
+</style>

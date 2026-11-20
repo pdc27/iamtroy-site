@@ -1,0 +1,46 @@
+---
+import CategoryView from '../../components/CategoryView.astro';
+import Pips from '../../components/Pips.astro';
+import { category, colorCategories, decks, decksIn, categoryPath } from '../../lib/data';
+
+export function getStaticPaths() {
+  return ['mono-colored', 'duas-cores', 'tres-cores', 'wubrg'].map((group) => ({ params: { group } }));
+}
+const { group } = Astro.params;
+const cat = category(group!);
+const isGroup = cat.group === 'grupo';
+const children = colorCategories.filter((c) => c.group === group);
+const list = isGroup
+  ? decks.filter((d) => children.some((c) => c.slug === d.category)).sort((a, b) => a.name.localeCompare(b.name, 'pt'))
+  : decksIn(group!);
+const titles: Record<string, [string, string]> = {
+  'mono-colored': ['Decks de Commander mono-colored: listas por cor', 'Decks Commander mono-colored'],
+  'duas-cores': ['Decks de Commander de duas cores (guildas): listas', 'Decks Commander de duas cores'],
+  'tres-cores': ['Decks de Commander de três cores: listas completas', 'Decks Commander de três cores'],
+  wubrg: ['Decks de Commander WUBRG (cinco cores): listas completas', 'Decks Commander WUBRG'],
+};
+const [title, h1] = titles[group!];
+---
+<CategoryView cat={cat} decks={list} title={title} h1={h1}
+  crumbs={[{ name: 'Commander', href: '/decks-commander' }, { name: cat.name }]}>
+  {isGroup && (
+    <section class="section section--tight">
+      <div class="wrap">
+        <h2 class="h2">Escolha a combinação</h2>
+        <ul class="subcats">
+          {children.map((c) => (
+            <li><a href={categoryPath(c.slug)}><Pips colors={c.colors} size="1.2rem" /><strong>{c.name}</strong><span>{decksIn(c.slug).length} decks</span></a></li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
+</CategoryView>
+
+<style>
+  .subcats { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); }
+  .subcats a { display: flex; align-items: center; gap: 12px; min-height: 60px; padding: 0 18px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); text-decoration: none; }
+  .subcats a:hover { border-color: var(--red-hot); color: #fff; }
+  .subcats strong { font: 700 1.15rem/1 var(--font-label); text-transform: uppercase; letter-spacing: .04em; }
+  .subcats span { margin-left: auto; color: var(--faint); font: 600 .85rem/1 var(--font-label); text-transform: uppercase; letter-spacing: .08em; }
+</style>

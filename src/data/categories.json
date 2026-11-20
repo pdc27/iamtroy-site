@@ -1,0 +1,1025 @@
+[
+  {
+    "slug": "decks-commander",
+    "name": "Decks Commander",
+    "colors": null,
+    "group": "commander",
+    "subtitle": "O QUE É COMMANDER?",
+    "intro": [
+      {
+        "type": "p",
+        "text": "Commander (ou EDH) é um dos formatos mais populares de Magic. Cada deck tem 100 cartas, sem repetição, e gira em torno de um comandante lendário que define as cores e a estratégia."
+      }
+    ]
+  },
+  {
+    "slug": "duas-cores",
+    "name": "Duas cores",
+    "colors": null,
+    "group": "grupo",
+    "subtitle": "O EQUILÍBRIO DAS DUPLAS",
+    "intro": [
+      {
+        "type": "p",
+        "text": "As combinações de 2 cores são o \"coração\" do Magic: The Gathering. É nelas que o jogo atinge o equilíbrio perfeito entre foco estratégico e diversidade de recursos, sem a complexidade extrema de mana das combinações maiores."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Sinergia de Ouro: Muitas das cartas mais fortes do jogo são \"multicoloridas\" (douradas). Ao unir duas cores, você libera o acesso a feitiços que fazem o que nenhuma cor consegue fazer sozinha.",
+          "Consistência e Alcance: Você mantém a estabilidade de mana (usando terrenos duplos simples) enquanto cobre as fraquezas de uma cor com as forças da outra.",
+          "Identidade Visual: Graças ao bloco de Ravnica, essas combinações são conhecidas como Guildas, cada uma com seu próprio selo, estilo de jogo e personalidade marcante."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "azorius",
+    "name": "Azorius",
+    "colors": "WU",
+    "group": "duas-cores",
+    "subtitle": "AZORIUS (BRANCO/AZUL)",
+    "intro": [
+      {
+        "type": "p",
+        "text": "A combinação Azorius (Azul e Branco) é o pilar da ordem, da estrutura e do controle absoluto no Multiverso. Enquanto o Branco traz a força dos exércitos, a proteção e a justiça, o Azul entra com o intelecto, a manipulação do tempo e o fluxo constante de informações."
+      },
+      {
+        "type": "p",
+        "text": "Jogar de Azorius é ditar o ritmo da partida. É saber a hora exata de anular uma ameaça, limpar o campo com uma destruição global estratégica ou proteger suas peças-chave com barreiras intransponíveis. É uma combinação que recompensa a paciência: você sobrevive ao início do jogo, acumula recursos e, quando seus oponentes perdem o fôlego, você domina a mesa com uma vantagem de cartas esmagadora e uma presença de campo que simplesmente não pode ser ignorada."
+      }
+    ]
+  },
+  {
+    "slug": "boros",
+    "name": "Boros",
+    "colors": "RW",
+    "group": "duas-cores",
+    "subtitle": "BOROS ( VERMELHO/BRANCO )",
+    "intro": [
+      {
+        "type": "p",
+        "text": "Boros é amplamente conhecida por ser a combinação rainha do Aggro. Enquanto o Branco traz criaturas eficientes, proteção e táticas de exército, o Vermelho injeta velocidade (Ímpeto), dano direto e agressividade."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Go Wide: Encher o campo com pequenas criaturas e fichas de soldado.",
+          "Voltron: Focar em uma única ameaça imparável equipada com artefatos ou encantamentos (Auras).",
+          "Burn & Removal: Utilizar mágicas que limpam o caminho para suas criaturas ou finalizam o oponente diretamente."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "dimir",
+    "name": "Dimir",
+    "colors": "UB",
+    "group": "duas-cores",
+    "subtitle": "DIMIR (AZUL/PRETO)",
+    "intro": [
+      {
+        "type": "p",
+        "text": "A combinação Dimir representa o lado mais estratégico e imprevisível de Magic: The Gathering. Inspirada na Casa Dimir, essa dupla de cores valoriza informação, controle e vantagem a longo prazo."
+      },
+      {
+        "type": "p",
+        "text": "Decks Dimir costumam jogar no tempo do oponente, manipulando a mesa com:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Compra de cartas e seleção de mão",
+          "Anulações e remoções eficientes",
+          "Descarte, cemitério e controle de recursos",
+          "Estratégias sorrateiras que vencem no detalhe"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "É uma combinação ideal para jogadores que gostam de pensar vários turnos à frente, punir erros e vencer com consistência, seja através de controle pesado, value incremental ou combos bem protegidos."
+      }
+    ]
+  },
+  {
+    "slug": "golgari",
+    "name": "Golgari",
+    "colors": "BG",
+    "group": "duas-cores",
+    "subtitle": "GOLGARI (PRETO/VERDE)",
+    "intro": [
+      {
+        "type": "p",
+        "text": "Golgari não luta contra a morte. Golgari transforma a morte em recurso."
+      },
+      {
+        "type": "p",
+        "text": "A combinação preto e verde de Magic: The Gathering representa o ciclo natural em sua forma mais brutal: vida, decomposição… e renascimento. Enquanto o verde cultiva crescimento e força da natureza, o preto abraça sacrifício, ambição e o poder do cemitério. Juntos, eles criam decks que parecem um pântano vivo engolindo tudo lentamente."
+      },
+      {
+        "type": "p",
+        "text": "No Golgari, criaturas voltam do cemitério, permanentes viram combustível e cada carta descartada pode acabar se tornando vantagem depois. É a combinação perfeita pra quem gosta de grind, valor infinito e daquela sensação deliciosa de “você destruiu meu campo… parabéns, era exatamente o que eu queria.”"
+      },
+      {
+        "type": "p",
+        "text": "Dos fungos e necromantes do Clã Golgari até monstros gigantescos alimentados pela podridão, Golgari é a prova de que, em Magic, até a decadência floresce."
+      }
+    ]
+  },
+  {
+    "slug": "gruul",
+    "name": "Gruul",
+    "colors": "RG",
+    "group": "duas-cores",
+    "subtitle": "GRUUL (VERMELHO/VERDE)",
+    "intro": [
+      {
+        "type": "p",
+        "text": "A combinação Gruul representa a força bruta, a velocidade e a rejeição de jogadas excessivamente elaboradas em Magic: The Gathering. Inspirada na Clã Gruul, essa dupla de cores valoriza impacto imediato, presença de mesa e vitórias conquistadas no combate."
+      },
+      {
+        "type": "p",
+        "text": "Decks Gruul se destacam por:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Criaturas grandes e agressivas",
+          "Ramp acelerado para ameaças cedo no jogo",
+          "Pressão constante através do combate",
+          "Jogadas diretas, eficientes e difíceis de conter"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Gruul não joga para esperar. Ele joga para dominar o campo de batalha. A estratégia é simples na superfície, mas poderosa na execução: acelerar mana, colocar ameaças relevantes em mesa e forçar o oponente a responder turno após turno, até ficar sem opções."
+      }
+    ]
+  },
+  {
+    "slug": "izzet",
+    "name": "Izzet",
+    "colors": "UR",
+    "group": "duas-cores",
+    "subtitle": "IZZET (AZUL/VERMELHO)",
+    "intro": [
+      {
+        "type": "p",
+        "text": "A combinação Izzet (Azul e Vermelho) é a personificação do caos controlado e do intelecto explosivo no Magic. Se o Azul é a mente fria e calculista e o Vermelho é a paixão e a impulsividade, o Izzet é o momento exato em que um cientista maluco grita \"EUREKA!\" enquanto o laboratório explode atrás dele."
+      },
+      {
+        "type": "h3",
+        "text": "1. Mestres das Mágicas Instantâneas e Feitiços"
+      },
+      {
+        "type": "p",
+        "text": "Nenhuma combinação de cores interage tanto com a pilha quanto o Izzet. Enquanto outros decks focam em encher o campo com criaturas, o Izzet prefere resolver problemas com queimar (dano direto) e anular. A ideia é frustrar os planos do oponente enquanto você prepara uma jogada de mestre."
+      },
+      {
+        "type": "h3",
+        "text": "2. Velocidade e Reatividade"
+      },
+      {
+        "type": "p",
+        "text": "É a combinação do \"Tempo\". Você dita o ritmo da partida. O azul te dá o controle do futuro (com compras de cartas e vidência), e o vermelho garante que o presente seja doloroso para o adversário. É um estilo de jogo que recompensa a inteligência e o timing perfeito."
+      },
+      {
+        "type": "h3",
+        "text": "3. Vantagem de Cartas e Filtragem"
+      },
+      {
+        "type": "p",
+        "text": "Se você joga de Izzet, sua mão raramente fica vazia. O Azul compra, o Vermelho faz o \"saque\" (compra e descarta) ou o \"exílio temporário\" (jogue esta carta neste turno). Isso faz com que o deck seja extremamente consistente, sempre cavando em busca da resposta certa para cada ameaça."
+      },
+      {
+        "type": "h3",
+        "text": "4. Criaturas que \"Crescem\" com Magia"
+      },
+      {
+        "type": "p",
+        "text": "As criaturas Izzet geralmente não são gigantescas por natureza, mas se tornam monstros através da sinergia. Elas possuem habilidades como Destreza (Prowess) ou efeitos que disparam toda vez que você conjura uma mágica não de criatura. É o conceito de transformar conhecimento em força bruta."
+      },
+      {
+        "type": "h3",
+        "text": "Em resumo:"
+      },
+      {
+        "type": "p",
+        "text": "Jogar de Izzet é sobre flexibilidade. É para quem gosta de ter resposta para tudo, de mudar de uma postura defensiva para um ataque letal em um único turno e, acima de tudo, para quem ama a satisfação de conjurar três ou quatro mágicas seguidas e ver a mesa tentar entender o que aconteceu."
+      }
+    ]
+  },
+  {
+    "slug": "orzhov",
+    "name": "Orzhov",
+    "colors": "WB",
+    "group": "duas-cores",
+    "subtitle": "ORZHOV (BRANCO/PRETO)",
+    "intro": [
+      {
+        "type": "p",
+        "text": "A combinação Orzhov representa controle, valor a longo prazo e manipulação de recursos em Magic: The Gathering. Inspirada na Sindicato Orzhov, essa dupla de cores transforma sacrifício, impostos e vantagens incrementais em vitórias consistentes."
+      },
+      {
+        "type": "p",
+        "text": "Decks Orzhov se destacam por:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Remoções eficientes e respostas versáteis",
+          "Estratégias de sacrifício e recursão",
+          "Ganho e drenagem de vida",
+          "Controle de recursos da mesa"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Orzhov não precisa correr. Ele vence cobrando cada ação, explorando pequenas vantagens até que o jogo esteja completamente sob seu controle. Seja através de engines de valor, pressão constante ou interações precisas, essa combinação recompensa jogadores pacientes e calculistas."
+      }
+    ]
+  },
+  {
+    "slug": "rakdos",
+    "name": "Rakdos",
+    "colors": "BR",
+    "group": "duas-cores",
+    "subtitle": "RAKDOS ( VERMELHO /PRETO)",
+    "intro": [
+      {
+        "type": "p",
+        "text": "A combinação Rakdos representa o lado mais agressivo, explosivo e visceral de Magic: The Gathering. Inspirada na Casa Rakdos, essa dupla de cores vive no limite entre risco e recompensa, onde cada decisão pode acelerar o jogo… ou encerrar a partida."
+      },
+      {
+        "type": "p",
+        "text": "Decks Rakdos se destacam por:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Pressão constante e dano direto",
+          "Sacrifício de criaturas como recurso",
+          "Descarte e punição de mão",
+          "Acesso rápido a ameaças impactantes"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "É a escolha ideal para jogadores que preferem jogos intensos, cheios de interação, onde o objetivo é desequilibrar a mesa e forçar respostas. Rakdos vence acelerando o ritmo, explorando vantagens agressivas ou fechando partidas com explosões repentinas de dano e valor."
+      }
+    ]
+  },
+  {
+    "slug": "selesnya",
+    "name": "Selesnya",
+    "colors": "GW",
+    "group": "duas-cores",
+    "subtitle": "SELESNYA ( BRANCO/VERDE )",
+    "intro": [
+      {
+        "type": "p",
+        "text": "No universo de Magic, a combinação das cores Branco (W) e Verde (G) é representada pelo Conclave Selesnya. Essa guilda acredita que a verdadeira força não reside no indivíduo, mas na harmonia do coletivo e no poder da natureza."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Branco (Ordem e Proteção): Traz a estrutura, a justiça e a capacidade de proteger suas criaturas. É a cor que une os indivíduos sob um propósito comum.",
+          "Verde (Natureza e Crescimento): Fornece a força bruta, o crescimento acelerado e a conexão com a vida selvagem. É a cor que garante que o exército seja massivo e imparável."
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "Estilo de Jogo"
+      },
+      {
+        "type": "p",
+        "text": "Se você gosta de encher o campo de batalha rapidamente, Selesnya é a sua escolha ideal. Suas principais mecânicas costumam envolver:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Geração de Fichas: Criar um exército de criaturas (como Soldados, Elfos ou Lobos) a partir do nada.",
+          "Mecânica de Povoar (Populate): Uma habilidade clássica que permite criar cópias de fichas de criatura que você já possui, fazendo sua presença de mesa crescer exponencialmente.",
+          "Buffs Coletivos: Feitiços e habilidades que fortalecem todas as suas criaturas ao mesmo tempo, transformando um grupo de pequenos aprendizes em uma força devastadora.",
+          "Ganho de Vida: A resiliência do Conclave permite que você sobreviva a ataques agressivos enquanto monta sua estratégia."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "simic",
+    "name": "Simic",
+    "colors": "GU",
+    "group": "duas-cores",
+    "subtitle": "SIMIC (VERDE/AZUL)",
+    "intro": [
+      {
+        "type": "p",
+        "text": "Simic é a combinação do verde com o azul e, em Magic, representa uma filosofia baseada na união entre conhecimento, natureza e evolução."
+      },
+      {
+        "type": "p",
+        "text": "Na lore de Ravnica, o Conclave Simic busca compreender a vida e aprimorá-la por meio da ciência e da manipulação biológica. Para eles, a natureza não precisa permanecer estática. Ela pode evoluir, adaptar-se e assumir novas formas."
+      },
+      {
+        "type": "p",
+        "text": "O verde representa crescimento, vida, instinto e conexão com a natureza. Já o azul representa conhecimento, planejamento, curiosidade e busca pela perfeição. Quando esses dois conceitos se encontram, surge uma identidade que mistura desenvolvimento natural com experimentação."
+      },
+      {
+        "type": "p",
+        "text": "Nos decks Simic, isso costuma aparecer através de muita geração de valor, compra de cartas, aceleração de mana, criaturas que crescem ao longo do jogo e estratégias que recompensam a evolução constante da mesa."
+      },
+      {
+        "type": "p",
+        "text": "Simic é, em essência, a ideia de que conhecimento e natureza podem trabalhar juntos para criar algo maior, mais eficiente e mais adaptável."
+      }
+    ]
+  },
+  {
+    "slug": "mono-colored",
+    "name": "Mono-colored",
+    "colors": null,
+    "group": "grupo",
+    "subtitle": "O CAMINHO DOS MONO-COLORED",
+    "intro": [
+      {
+        "type": "p",
+        "text": "No Magic: The Gathering, as cinco cores formam a base de toda a estratégia. Enquanto decks multicoloridos buscam versatilidade, os decks Mono-Color focam na pureza e na consistência absoluta."
+      },
+      {
+        "type": "h3",
+        "text": "Por que jogar com apenas uma cor?"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Estabilidade de Mana: Você nunca vai perder um jogo porque não comprou a cor de terreno certa. Terrenos básicos são seus melhores amigos.",
+          "Identidade Máxima: Cada cor tem uma alma. Jogar de mono-color é mergulhar fundo na filosofia e nos pontos fortes específicos daquela cor, levando suas mecânicas ao limite.",
+          "Velocidade e Sinergia: Muitas das cartas mais poderosas do jogo exigem vários símbolos da mesma cor para serem conjuradas — um \"sacrifício\" que decks de uma cor só transformam em vantagem pura."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "azul",
+    "name": "Azul",
+    "colors": "U",
+    "group": "mono-colored",
+    "subtitle": "AZUL (Mono Blue)",
+    "intro": [
+      {
+        "type": "p",
+        "text": "O Azul representa o domínio do conhecimento, do controle e da antecipação em Magic: The Gathering. É a cor de quem prefere entender o jogo antes de vencê-lo, manipulando o ritmo da partida e tomando decisões com informação completa."
+      },
+      {
+        "type": "p",
+        "text": "Decks mono azul são conhecidos por:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Compra e seleção avançada de cartas",
+          "Anulações e proteção de jogadas-chave",
+          "Controle do ritmo da mesa",
+          "Estratégias baseadas em tempo, pilha e valor incremental"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ao invés de força bruta, o Azul vence através de precisão. Cada resposta é pensada, cada jogada tem propósito. Seja controlando a mesa por vários turnos ou preparando uma vitória inevitável, o Azul recompensa jogadores pacientes e atentos aos detalhes."
+      }
+    ]
+  },
+  {
+    "slug": "branco",
+    "name": "Branco",
+    "colors": "W",
+    "group": "mono-colored",
+    "subtitle": "BRANCO (Mono White )",
+    "intro": [
+      {
+        "type": "p",
+        "text": "O branco foca em estabelecer regras que todos devem seguir (os famosos efeitos de Stax ou \"Tax\"), impedir que oponentes joguem livremente e proteger suas próprias criaturas. É a cor mestre em lidar com qualquer tipo de ameaça, possuindo as melhores remoções globais (as \"Wraths\") que limpam o campo de batalha quando as coisas saem do controle."
+      },
+      {
+        "type": "h3",
+        "text": "O Commander Mono White"
+      },
+      {
+        "type": "p",
+        "text": "Ao escolher um comandante desta cor, sua estratégia geralmente seguirá um destes caminhos:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Tokens e Weenie: Encher o campo com pequenas criaturas (soldados, anjos ou humanos) e fortalecê-las com hinos de guerra para vencer pelo número.",
+          "Equipamentos e Voltron: Focar em um único comandante poderoso, equipando-o com artefatos de proteção e dano massivo.",
+          "Lifegain: Utilizar o ganho de vida não apenas para sobreviver, mas como combustível para habilidades que punem os oponentes."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "incolor",
+    "name": "Incolor",
+    "colors": "C",
+    "group": "mono-colored",
+    "subtitle": "INCOLOR ( COLORLESS )",
+    "intro": [
+      {
+        "type": "p",
+        "text": "O Incolor é uma identidade única em Magic, composta por cartas que não pertencem a nenhuma das cinco cores do jogo. Essa estratégia costuma girar em torno de artefatos, aceleração de mana e criaturas gigantes, especialmente os poderosos Eldrazi."
+      },
+      {
+        "type": "p",
+        "text": "Decks incolores utilizam fontes capazes de gerar mana incolor verdadeiro (◇), permitindo conjurar mágicas com efeitos exclusivos e ameaças capazes de dominar a partida rapidamente. Embora não tenham acesso às ferramentas tradicionais das cores, compensam com versatilidade, permanentes impactantes e um estilo de jogo totalmente diferente do convencional."
+      },
+      {
+        "type": "p",
+        "text": "Ideal para quem gosta de jogadas grandiosas, criaturas colossais e muita mana em campo."
+      }
+    ]
+  },
+  {
+    "slug": "preto",
+    "name": "Preto",
+    "colors": "B",
+    "group": "mono-colored",
+    "subtitle": "PRETO (Mono Bl ack )",
+    "intro": [
+      {
+        "type": "p",
+        "text": "Jogar de Mono Black é abraçar a filosofia de que a vitória deve ser alcançada a qualquer custo. É a cor da ambição, do pragmatismo e do poder absoluto."
+      },
+      {
+        "type": "p",
+        "text": "Para um jogador de preto, a vida e o cemitério não são limites, mas sim recursos. Você não se importa em sacrificar suas próprias criaturas ou pagar com seu próprio sangue para comprar cartas e destruir ameaças, pois entende que o único ponto de vida que realmente importa é o último."
+      },
+      {
+        "type": "h3",
+        "text": "Os Pilares do Pântano:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Controle Implacável: Se algo se move no campo, o preto tem uma forma de matá-lo. Se algo está na mão do oponente, o preto o faz descartar.",
+          "A Morte é um Recomeço: O cemitério é uma extensão da sua mão. Trazer criaturas de volta à vida (Reanimate) é a especialidade da casa.",
+          "Ambição Desmedida: É a cor dos Demônios, Vampiros e Zumbis — criaturas que drenam a energia do adversário enquanto fortalecem o seu próprio império."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Em resumo: Jogar de Mono Black é ser o mestre da atrição, vencendo através do medo e da certeza de que, no final, tudo o que morre pertence a você."
+      }
+    ]
+  },
+  {
+    "slug": "verde",
+    "name": "Verde",
+    "colors": "G",
+    "group": "mono-colored",
+    "subtitle": "VERDE (Mono Green)",
+    "intro": [
+      {
+        "type": "p",
+        "text": "O Verde representa crescimento, força e conexão com a natureza em Magic: The Gathering. É a cor da evolução constante, da superioridade em mesa e das vitórias construídas com paciência e poder bruto."
+      },
+      {
+        "type": "p",
+        "text": "Decks mono verde são conhecidos por:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Aceleração de mana e ramp consistente",
+          "Criaturas grandes e impactantes",
+          "Sinergias baseadas em terrenos e crescimento",
+          "Pressão contínua através de vantagem natural"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "O Verde vence impondo presença. Ele cresce mais rápido, bate mais forte e sustenta o jogo no longo prazo. Seja dominando a mesa com criaturas gigantes, gerando valor com ramp e card advantage indireto ou simplesmente atropelando com eficiência, essa cor recompensa jogadores que gostam de progredir turno após turno até se tornarem imparáveis."
+      }
+    ]
+  },
+  {
+    "slug": "vermelho",
+    "name": "Vermelho",
+    "colors": "R",
+    "group": "mono-colored",
+    "subtitle": "VERMELHO (Mono Red)",
+    "intro": [
+      {
+        "type": "p",
+        "text": "O Vermelho representa ação imediata, emoção e intensidade em Magic: The Gathering. É a cor da iniciativa, do risco calculado e das vitórias rápidas, onde cada turno conta e cada decisão pode encerrar a partida em um piscar de olhos."
+      },
+      {
+        "type": "p",
+        "text": "Decks mono vermelho se destacam por:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Dano direto e pressão constante",
+          "Agressividade desde os primeiros turnos",
+          "Aceleração explosiva e jogadas imprevisíveis",
+          "Estratégias que recompensam ousadia e timing"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "O Vermelho não espera o jogo acontecer. Ele força o jogo a acontecer. Seja atropelando o oponente com criaturas rápidas, controlando a mesa com queimadas precisas ou encerrando a partida com uma sequência devastadora de feitiços, essa cor é feita para quem gosta de ritmo alto e decisões sem hesitação."
+      }
+    ]
+  },
+  {
+    "slug": "tres-cores",
+    "name": "Três cores",
+    "colors": null,
+    "group": "grupo",
+    "subtitle": "A ALQUIMIA DAS 3 CORES",
+    "intro": [
+      {
+        "type": "p",
+        "text": "Subir para três cores é onde o Magic ganha camadas profundas de estratégia. Nessas combinações, as cores param de apenas \"se ajudar\" e passam a criar arquétipos únicos que definem formatos inteiros, como o Commander e o Modern."
+      },
+      {
+        "type": "h3",
+        "text": "1. Os Fragmentos (Shards)"
+      },
+      {
+        "type": "p",
+        "text": "Baseados no plano de Alara, os fragmentos são formados por uma cor e suas duas \"aliadas\" (vizinhas na roda de cores). Eles costumam ser mais coesos e focados em temas clássicos:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Bant (WUG): Ordem, crescimento e paciência.",
+          "Esper (WUB): Artefatos, controle e perfeição.",
+          "Grixis (UBR): Morte, crueldade e feitiços poderosos.",
+          "Jund (BRG): Sobrevivência, agressão e recursos brutos.",
+          "Naya (WRG): Criaturas gigantescas e a força da natureza."
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "2. As Cunhas (Wedges)"
+      },
+      {
+        "type": "p",
+        "text": "Baseadas no plano de Tarkir, as cunhas unem uma cor às suas duas \"inimigas\". São combinações mais exóticas e focadas em resiliência e combate:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Abzan (WBG): Resistência, cemitério e o poder da família (clã).",
+          "Jeskai (WUR): Estratégia, artes marciais e truques de feitiço.",
+          "Sultai (UBG): Exploração do cemitério e controle total.",
+          "Mardu (WBR): Guerra total, velocidade e sacrifício.",
+          "Temur (URG): Selvageria, mana e o poder dos dragões."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "abzan",
+    "name": "Abzan",
+    "colors": "WBG",
+    "group": "tres-cores",
+    "subtitle": "ABZAN ( BRANCO/PRETO/VERDE)",
+    "intro": [
+      {
+        "type": "p",
+        "text": "O Abzan é conhecido pelo jogo de atrito. Enquanto outras combinações tentam vencer rápido, o Abzan foca em:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Sobrevivência: Você tem as melhores ferramentas para recuperar vida e bloquear ataques.",
+          "Versatilidade: É a combinação que possui as remoções mais abrangentes. Você consegue destruir qualquer tipo de permanente que o oponente coloque na mesa.",
+          "Inesgotabilidade: O Abzan interage muito bem com o cemitério e com o valor acumulado. No final do jogo, você geralmente tem mais recursos e permanentes do que seus adversários."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Em resumo, jogar de Abzan é construir uma presença de mesa que cresce aos poucos até se tornar uma força que os oponentes simplesmente não conseguem mais combater."
+      }
+    ]
+  },
+  {
+    "slug": "bant",
+    "name": "Bant",
+    "colors": "GWU",
+    "group": "tres-cores",
+    "subtitle": "BANT ( VERDE / BRANCO / AZUL )",
+    "intro": [
+      {
+        "type": "p",
+        "text": "No multiverso de Magic, essa tríade é frequentemente associada à ordem, ao crescimento e à harmonia tática."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Filosofia: É a combinação da civilização e da estratégia com a força bruta da natureza. Enquanto o Branco traz a estrutura e a proteção, o Azul oferece o planejamento e o controle, e o Verde garante os recursos e as criaturas poderosas.",
+          "Estilo de Jogo: Decks Bant costumam ser focados em valor. Eles são ótimos em acelerar a mana (herança do Verde), proteger suas ameaças com anulações ou escudos (Azul/Branco) e sobrepujar o oponente com criaturas que ficam progressivamente maiores ou mais difíceis de bloquear.",
+          "Mecânicas Comuns: É muito comum ver estratégias baseadas em \"Entra no Campo de Batalha\" (etb), ganho de vida, compra de cartas e o uso de contadores +1/+1."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Em resumo, jogar de Bant é ter a paciência de um estrategista e a força de uma floresta viva, garantindo que o jogo siga o seu ritmo até que a vitória seja inevitável."
+      }
+    ]
+  },
+  {
+    "slug": "esper",
+    "name": "Esper",
+    "colors": "WUB",
+    "group": "tres-cores",
+    "subtitle": "ESPER (BRANCO/AZUL/PRETO)",
+    "intro": [
+      {
+        "type": "p",
+        "text": "Essa combinação recebeu esse nome devido ao plano de Esper no bloco Shards of Alara, um mundo focado em perfeição, intelecto e artefatos."
+      },
+      {
+        "type": "p",
+        "text": "Decks Esper são conhecidos por sua natureza calculista e defensiva."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Controle e Reação: Utilizam anulações (Azul), remoções pontuais e globais (Preto e Branco) para ditar o ritmo do jogo.",
+          "Sinergia com Artefatos: Historicamente, Esper é a combinação que melhor utiliza artefatos, frequentemente transformando-os em criaturas ou utilizando-os para gerar valor.",
+          "Ganho de Vida e Drenagem: Aproveita a capacidade do Branco e Preto para estabilizar o jogo enquanto drena os recursos do oponente."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "grixis",
+    "name": "Grixis",
+    "colors": "UBR",
+    "group": "tres-cores",
+    "subtitle": "GRIXIS (AZUL/PRETO/VERMELHO)",
+    "intro": [
+      {
+        "type": "p",
+        "text": "Dominar com a combinação Grixis é abraçar a filosofia da vitória a qualquer custo. Representada pelas cores Azul, Preto e Vermelho, essa tríade é amplamente conhecida no Magic como a \"combinação dos vilões\", e não é por acaso: ela foca em desestabilizar o oponente enquanto você manipula os recursos mais sombrios do jogo."
+      },
+      {
+        "type": "h3",
+        "text": "O Intelecto do Azul (U)"
+      },
+      {
+        "type": "p",
+        "text": "O Azul traz a especulação e o controle. Ele garante que você nunca fique sem cartas na mão e que os planos dos seus oponentes sejam frustrados por anulações e efeitos de retorno. É a cor que dita o ritmo da partida, garantindo que você sempre tenha a resposta certa no momento certo."
+      },
+      {
+        "type": "h3",
+        "text": "A Crueldade do Preto (B)"
+      },
+      {
+        "type": "p",
+        "text": "O Preto é o motor de sacrifício e tutoramento. Ele não tem medo de pagar com a própria vida para buscar a carta da vitória ou de esvaziar a mão e o campo adversário. É a cor que utiliza o cemitério como uma extensão da própria mão, transformando a morte em um recurso estratégico."
+      },
+      {
+        "type": "h3",
+        "text": "O Caos do Vermelho (R)"
+      },
+      {
+        "type": "p",
+        "text": "O Vermelho injeta explosividade e agressividade. Ele traz o dano direto, a destruição de artefatos e o ímpeto. É a cor que pune a hesitação e garante que, quando o oponente baixar a guarda, o golpe final seja rápido e devastador."
+      },
+      {
+        "type": "h3",
+        "text": "A Sinergia Perfeita"
+      },
+      {
+        "type": "p",
+        "text": "Diferente de outras combinações, o Grixis não busca harmonia, mas sim a supremacia."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Enquanto o Azul e o Preto montam o \"lock\" de controle e descarte, o Vermelho finaliza com fogo e caos.",
+          "É uma combinação de cores que brilha em estratégias de Spellslinger (conjurar muitas mágicas), Reanimate (trazer monstros do lixo) e, principalmente, Wheels (fazer todos descartarem e comprarem, punindo cada movimento)."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Se você gosta de ter o controle absoluto da mesa, manipular o destino e ver seus oponentes sem recursos enquanto você acumula poder, você nasceu para jogar de Grixis."
+      }
+    ]
+  },
+  {
+    "slug": "jeskai",
+    "name": "Jeskai",
+    "colors": "URW",
+    "group": "tres-cores",
+    "subtitle": "JESKAI (AZUL/VERMELHO/BRANCO)",
+    "intro": [
+      {
+        "type": "p",
+        "text": "A combinação Jeskai representa técnica, precisão e domínio do tempo em Magic: The Gathering. Inspirada no Clã Jeskai, essa tríade de cores recompensa jogadores que sabem equilibrar controle, agressão pontual e jogadas perfeitamente cronometradas."
+      },
+      {
+        "type": "p",
+        "text": "Decks Jeskai se destacam por:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Forte interação com mágicas instantâneas e feitiços",
+          "Controle de mesa aliado a pressão eficiente",
+          "Sinergias com não-criaturas",
+          "Grande flexibilidade estratégica"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Jeskai joga como um duelista experiente. Ele responde quando precisa, avança quando encontra a brecha e fecha o jogo com precisão cirúrgica. A combinação de Azul, Vermelho e Branco permite alternar entre controle, tempo e agressão, tornando cada partida dinâmica e cheia de decisões relevantes."
+      }
+    ]
+  },
+  {
+    "slug": "jund",
+    "name": "Jund",
+    "colors": "BRG",
+    "group": "tres-cores",
+    "subtitle": "J UND ( VERDE /VERMELHO/ PRETO)",
+    "intro": [
+      {
+        "type": "p",
+        "text": "No Magic, a combinação Jund representa força bruta, ambição e instinto de sobrevivência."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Verde traz aceleração de mana, criaturas grandes e conexão com a natureza.",
+          "Vermelho adiciona agressividade, dano direto e explosões imprevisíveis.",
+          "Preto entra com sacrifícios, cemitério e vantagem a qualquer custo."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Jund é a filosofia do “crescer destruindo”. É o estilo de jogo que transforma recursos em pressão constante, sacrifica permanentes para gerar valor e finaliza a mesa com ataques devastadores."
+      },
+      {
+        "type": "p",
+        "text": "Se é pra jogar de Jund… é pra dominar ou morrer tentando."
+      }
+    ]
+  },
+  {
+    "slug": "mardu",
+    "name": "Mardu",
+    "colors": "RWB",
+    "group": "tres-cores",
+    "subtitle": "MARDU (VERMELHO/BRANCO/PRETO)",
+    "intro": [
+      {
+        "type": "p",
+        "text": "A combinação de Preto, Branco e Vermelho no Magic é amplamente conhecida como Mardu (nome originado do clã de Tarkir) ou, em contextos mais antigos, Savai."
+      },
+      {
+        "type": "p",
+        "text": "Essa tríade é famosa por ser uma das combinações mais agressivas e eficientes do jogo, unindo o que cada cor tem de melhor em termos de controle de mesa e pressão constante:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Preto: Oferece o \"poder a qualquer custo\". É a cor dos tutores, do sacrifício de criaturas por benefício próprio e das remoções diretas que ignoram as defesas do oponente.",
+          "Branco: Traz a ordem e a proteção. É responsável por exílios, defesas sólidas, ganho de vida e as famosas \"limpezas de mesa\" ( board wipes ) que resetam o jogo quando as coisas saem do controle.",
+          "Vermelho: Injeta velocidade e caos. Garante ímpeto ( haste ) para as criaturas, dano direto aos oponentes e efeitos de aceleração que permitem jogadas explosivas logo nos primeiros turnos."
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "Por que jogar de Mardu?"
+      },
+      {
+        "type": "p",
+        "text": "Quando você une essas três cores, você cria um baralho extremamente resiliente. Enquanto o Vermelho e o Preto cuidam de atacar rápido e punir o adversário, o Branco garante que você tenha as ferramentas necessárias para sobreviver ao jogo longo."
+      },
+      {
+        "type": "p",
+        "text": "É uma combinação de cores que não aceita desaforo: se algo está no caminho, o Mardu tem uma ferramenta (seja um raio, um exílio ou uma destruição) para remover e continuar batendo."
+      }
+    ]
+  },
+  {
+    "slug": "naya",
+    "name": "Naya",
+    "colors": "RGW",
+    "group": "tres-cores",
+    "subtitle": "NAYA ( VERMELHO/VERDE /BRANCO)",
+    "intro": [
+      {
+        "type": "p",
+        "text": "No Multiverso de Magic, Naya não é apenas uma combinação de cores (RGW — Verde, Vermelho e Branco); é a representação da vida em sua forma mais selvagem e implacável."
+      },
+      {
+        "type": "p",
+        "text": "Se o Branco traz a ordem e a proteção, o Vermelho injeta a paixão e a velocidade, enquanto o Verde garante o crescimento e o poder bruto. Juntas, essas cores formam o coração do combate:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Poder Colossal: Onde as maiores criaturas do jogo ganham vida.",
+          "Resiliência: Proteção total para suas peças-chave e suporte para equipamentos.",
+          "Velocidade: Aceleração de mana para ditar o ritmo da partida desde o primeiro turno."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Escolher Naya é escolher o domínio do campo de batalha. É para quem gosta de jogar com o \"pé no acelerador\", sem abrir mão da estratégia e da sinergia."
+      }
+    ]
+  },
+  {
+    "slug": "sultai",
+    "name": "Sultai",
+    "colors": "BGU",
+    "group": "tres-cores",
+    "subtitle": "SULTAI (PRETO/VERDE/AZUL)",
+    "intro": [
+      {
+        "type": "p",
+        "text": "No Commander, a combinação Sultai (Preto, Verde e Azul) é amplamente considerada uma das mais poderosas e resilientes do formato. Baseada no clã de Khans de Tarkir, essa tríade foca em um ciclo constante de recursos: colocar cartas no cemitério para extrair valor delas."
+      },
+      {
+        "type": "p",
+        "text": "Aqui está um resumo do que torna Sultai uma força dominante na mesa:"
+      },
+      {
+        "type": "h3",
+        "text": "1. O Triângulo de Recursos"
+      },
+      {
+        "type": "p",
+        "text": "Cada cor contribui com um pilar fundamental para o sucesso no Commander:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Verde: Garante a aceleração de mana ( ramp ) e a correção de cores, permitindo que você jogue suas bombas antes dos adversários.",
+          "Azul: Oferece seleção de cartas, compras eficientes e a capacidade de interagir com a pilha (anulações).",
+          "Preto: Traz tutores, remoções pontuais e a habilidade de tratar o cemitério como uma \"segunda mão\"."
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "2. Estilos de Jogo Populares"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Reanimate & Dredge: Usar o cemitério como recurso principal. Você descarta criaturas imensas e as traz de volta por uma fração do custo de mana.",
+          "Value Engines (Grind): Decks que buscam trocas 2 por 1 constantes, gerando tanto valor acumulado que os oponentes simplesmente ficam sem fôlego.",
+          "Pod & Evolução: Sacrificar criaturas para buscar ameaças maiores diretamente no deck, aproveitando a sinergia entre o Verde e o Preto."
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "3. Comandantes Icônicos"
+      },
+      {
+        "type": "p",
+        "text": "Sultai possui alguns dos generais mais temidos do formato:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Muldrotha, a Maré de Covil: O auge da resiliência, permitindo jogar permanentes do cemitério a cada turno.",
+          "The Mimeoplasm: Um mestre da versatilidade que se transforma em ameaças gigantescas copiando o que há de melhor nos cemitérios de todos.",
+          "Tasigur, a Garra de Ouro: Excelente para política e controle, permitindo recuperar peças-chave com a ajuda (forçada) dos oponentes.",
+          "Yarok, o Desecrado: Dobra todos os efeitos de \"quando entra no campo de batalha\", criando turnos explosivos e caóticos."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Se você gosta de ter uma resposta para cada situação e acredita que \"cartas no cemitério são apenas recursos esperando para serem usados\", Sultai é a sua combinação. É uma \"máquina de valor\" que raramente fica sem gás no late game."
+      }
+    ]
+  },
+  {
+    "slug": "temur",
+    "name": "Temur",
+    "colors": "GUR",
+    "group": "tres-cores",
+    "subtitle": "TEMUR ( AZUL/VERMELHO/VERDE)",
+    "intro": [
+      {
+        "type": "p",
+        "text": "Temur não é só uma combinação de cores. É um estilo de vida dentro do Magic."
+      },
+      {
+        "type": "p",
+        "text": "Azul, vermelho e verde juntos formam uma tempestade viva."
+      },
+      {
+        "type": "p",
+        "text": "O verde é a força primordial. Criaturas enormes, ramp absurdo, presença de mesa que impõe respeito. É a floresta crescendo sem pedir permissão."
+      },
+      {
+        "type": "p",
+        "text": "O vermelho é impulso e impacto. Dano direto, explosões repentinas, turnos que parecem calmos… até não parecerem mais."
+      },
+      {
+        "type": "p",
+        "text": "O azul é o cérebro da operação. Compra cartas, gera valor, manipula o fluxo do jogo. É o vento que direciona o incêndio."
+      },
+      {
+        "type": "p",
+        "text": "Temur joga grande. Joga agressivo. Mas joga inteligente. É a combinação para quem quer acelerar, encher a mesa de ameaça e ainda ter recurso para continuar pressionando."
+      },
+      {
+        "type": "p",
+        "text": "Não é controle travado. Não é combo escondido. É natureza indomável com estratégia afiada."
+      }
+    ]
+  },
+  {
+    "slug": "wubrg",
+    "name": "WUBRG",
+    "colors": "WUBRG",
+    "group": "top",
+    "subtitle": "WUBRG (Azul/Branco/Vermelho/Preto/Verde)",
+    "intro": [
+      {
+        "type": "p",
+        "text": "A Filosofia: É a união de todas as ferramentas disponíveis. Você não tem pontos cegos; se uma cor tem uma fraqueza, a outra a compensa. É o baralho dos \"deuses\", das lendas e das respostas para qualquer situação."
+      },
+      {
+        "type": "p",
+        "text": "O Estilo de Jogo: Geralmente focado em Goodstuff (jogar apenas as melhores cartas de cada cor) ou em mecânicas de Convergência e Domínio, que recompensam o jogador por controlar todos os tipos de terrenos básicos."
+      },
+      {
+        "type": "p",
+        "text": "O Grande Desafio: A Base de Mana. O maior inimigo de um deck WUBRG não é o oponente, mas o próprio deck. O desafio técnico é construir uma estrutura de terrenos e artefatos que permita conjurar feitiços com custos de mana variados sem \"zicar\"."
+      },
+      {
+        "type": "p",
+        "text": "Jogar com o espectro completo de mana significa que você tem a resposta para qualquer ameaça. O Branco protege, o Azul controla, o Preto sacrifica, o Vermelho explode e o Verde cresce. Juntos, eles formam uma sinergia que permite conjurar as criaturas mais lendárias e os feitiços mais devastadores do jogo."
+      }
+    ]
+  },
+  {
+    "slug": "decks-pauper",
+    "name": "Decks Pauper",
+    "colors": null,
+    "group": "pauper",
+    "subtitle": "O QUE É PAUPER?",
+    "intro": [
+      {
+        "type": "p",
+        "text": "O Pauper é um dos formatos mais democráticos e acessíveis do Magic. A premissa é simples, mas o desafio estratégico é imenso: você só pode usar cartas de raridade comum."
+      },
+      {
+        "type": "h3",
+        "text": "1. A Regra de Ouro"
+      },
+      {
+        "type": "p",
+        "text": "Para uma carta ser válida no Pauper, ela precisa ter sido lançada como comum em qualquer edição (física ou digital) do Magic. Se uma carta foi lançada como rara antigamente, mas saiu como comum em uma coleção recente, ela está liberada!"
+      },
+      {
+        "type": "h3",
+        "text": "2. Baixo Custo, Alto Poder"
+      },
+      {
+        "type": "p",
+        "text": "Diferente de formatos como o Standard ou Modern, onde um único deck pode custar centenas de dólares, no Pauper você consegue montar decks competitivos de \"tier 1\" gastando muito pouco."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Acessibilidade: É o ponto de entrada perfeito para novos jogadores.",
+          "Complexidade: Não se engane pela raridade; o Pauper utiliza cartas icônicas da história do jogo (como Counterspell e Lightning Bolt ), resultando em partidas rápidas, técnicas e muito profundas."
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "3. O Metagame"
+      },
+      {
+        "type": "p",
+        "text": "Como as criaturas \"bombas\" (míticas e raras) não existem aqui, o jogo foca muito mais em:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Sinergia: Decks que funcionam como engrenagens perfeitas.",
+          "Vantagem de Cartas: Ganha quem consegue otimizar melhor os recursos básicos.",
+          "Interatividade: Quase todas as cores possuem respostas eficientes para as ameaças do oponente."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Dica de Ouro: O Pauper é um formato \"eterno\", o que significa que as cartas não \"rotacionam\". Uma vez que você monta seu deck, ele costuma ser válido por anos, com apenas pequenos ajustes conforme novas coleções saem."
+      }
+    ]
+  }
+]

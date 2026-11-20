@@ -1,0 +1,269 @@
+---
+import Base from '../layouts/Base.astro';
+import DeckCard from '../components/DeckCard.astro';
+import Pips from '../components/Pips.astro';
+import Icon from '../components/Icon.astro';
+import { site, apps, partners, rpg } from '../data/site';
+import { decks, latestDecks, colorCategories, decksIn, categoryPath, GROUPS } from '../lib/data';
+
+const latest = latestDecks(8);
+const total = decks.length;
+const withList = decks.filter((d) => d.slug).length;
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org', '@type': 'WebSite', name: 'I am Troy', url: site.domain, inLanguage: 'pt-BR',
+  },
+  {
+    '@context': 'https://schema.org', '@type': 'Person', name: 'Troy', url: site.domain,
+    image: `${site.domain}/img/troy.webp`,
+    jobTitle: 'Criadora de conteúdo de Magic: The Gathering e guitarrista',
+    sameAs: Object.values(site.social), email: `mailto:${site.email}`,
+    knowsAbout: ['Magic: The Gathering', 'Commander (EDH)', 'Pauper', 'Heavy metal', 'Guitarra', 'RPG de mesa'],
+  },
+];
+---
+<Base
+  title="Troy: decks de Commander e Pauper, metal e RPG"
+  description={`Hey, I'm Troy! ${total} decks de Magic (Commander e Pauper) prontos pra copiar e montar, separados por cor. Riff pesado, RPG de mesa e cupons de desconto.`}
+  jsonLd={jsonLd}
+>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bg" aria-hidden="true">
+      <img src="/img/logo-troy.webp" alt="" width="600" height="340" />
+    </div>
+    <div class="wrap hero__grid">
+      <div class="hero__copy">
+        <span class="kicker">Magic · Metal · RPG</span>
+        <h1 class="display">Hey, I’m Troy! <span aria-hidden="true">🤘</span></h1>
+        <p class="hero__lead">
+          Bem-vindo ao meu caos particular. Sou guitarrista, metaleira e nerd assumida. Toda semana trago
+          <strong>decks de Commander novos</strong>, e no meio disso tem riff pesado, RPG de mesa e muita bagunça criativa.
+        </p>
+        <p class="muted">Pega sua carta favorita, aumenta o volume e vem junto.</p>
+        <div class="hero__cta">
+          <a class="btn" href="/decks-commander">Ver os decks <Icon name="arrow" /></a>
+          <a class="btn btn--ghost" href={site.social.youtube} target="_blank" rel="noopener"><Icon name="youtube" /> Assistir no YouTube</a>
+        </div>
+        <dl class="stats">
+          <div><dt>Decks</dt><dd>{total}</dd></div>
+          <div><dt>Com lista completa</dt><dd>{withList}</dd></div>
+          <div><dt>Cupom</dt><dd>{site.coupon}</dd></div>
+        </dl>
+      </div>
+      <figure class="hero__photo">
+        <img src="/img/troy.webp" alt="Troy fazendo o sinal do metal e segurando uma carta de Magic" width="900" height="1259" fetchpriority="high" />
+        <figcaption>{site.tagline}</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ÚLTIMOS DECKS -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="kicker">Saiu do forno</span>
+          <h2 class="h2">Decks mais recentes</h2>
+          <p>As listas dos últimos vídeos, completas e prontas pra copiar.</p>
+        </div>
+        <a class="btn btn--ghost btn--sm" href="/decks-commander">Todos os decks <Icon name="arrow" size={16} /></a>
+      </div>
+      <div class="deck-grid">
+        {latest.map((d, i) => <DeckCard deck={d} eager={i < 4} />)}
+      </div>
+    </div>
+  </section>
+
+  <!-- POR COR -->
+  <section class="section section--panel" id="cores">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="kicker">My command zone</span>
+          <h2 class="h2">Escolha suas cores</h2>
+          <p>Se tem uma coisa que me faz perder a noção do tempo (além de solar na guitarra), é montar deck. Aqui ficam todas as listas, separadas por cor.</p>
+        </div>
+      </div>
+      {GROUPS.map((g) => (
+        <div class="color-group">
+          <h3><a href={`/decks-commander/${g.slug}`}>{g.name}</a></h3>
+          <ul class="color-grid">
+            {colorCategories.filter((c) => c.group === g.slug).map((c) => (
+              <li>
+                <a class="color-tile" href={categoryPath(c.slug)}>
+                  <Pips colors={c.colors} size="1.15rem" />
+                  <span class="color-tile__name">{c.name}</span>
+                  <span class="color-tile__count">{decksIn(c.slug).length}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+      <div class="color-group">
+        <h3>Mais</h3>
+        <ul class="color-grid">
+          <li><a class="color-tile" href="/decks-commander/wubrg"><Pips colors="WUBRG" size="1.15rem" /><span class="color-tile__name">WUBRG</span><span class="color-tile__count">{decksIn('wubrg').length}</span></a></li>
+          <li><a class="color-tile" href="/decks-pauper"><span class="pauper-mark">C</span><span class="color-tile__name">Pauper</span><span class="color-tile__count">{decksIn('decks-pauper').length}</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPS -->
+  <section class="section" id="apps">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="kicker">Feito por mim</span>
+          <h2 class="h2">Meus apps</h2>
+        </div>
+      </div>
+      <div class="apps">
+        {apps.map((a, i) => (
+          <article class={`app app--${a.id}`}>
+            <div class="app__mark" aria-hidden="true">{a.icon ? <img src={a.icon} alt="" width="64" height="64" /> : <Icon name={i === 0 ? 'guitar' : 'bolt'} size={34} />}</div>
+            <span class="app__kicker">{a.kicker}</span>
+            <h3 class="app__name">{a.name}</h3>
+            <p class="app__tag">{a.tagline}</p>
+            <p class="muted">{a.description}</p>
+            {a.url
+              ? <a class={`btn ${i === 0 ? '' : 'btn--bone'}`} href={a.url} target="_blank" rel="noopener">{a.cta} <Icon name="external" size={16} /></a>
+              : <span class="btn btn--ghost" aria-disabled="true">Em breve</span>}
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- MÚSICA E RPG -->
+  <section class="section section--red">
+    <div class="wrap duo">
+      <article class="duo__item">
+        <img src="/img/amp.webp" alt="Amplificador com onda sonora em neon vermelho" width="700" height="933" loading="lazy" />
+        <div>
+          <span class="kicker kicker--bone">Distorção no talo</span>
+          <h2>Metal, rock e metalcore</h2>
+          <p>Os riffs dos meus vídeos são meus. Em breve tem série nova juntando guitarra e Magic: <strong>cada cor de mana vira um riff</strong>.</p>
+          <a class="btn btn--bone btn--sm" href={site.social.youtube} target="_blank" rel="noopener"><Icon name="youtube" size={16} /> Ouvir no YouTube</a>
+        </div>
+      </article>
+      <article class="duo__item">
+        <img src="/img/d20.webp" alt="Dado d20 vermelho" width="700" height="929" loading="lazy" />
+        <div>
+          <span class="kicker kicker--bone">RPG de mesa</span>
+          <h2>Quando não estou montando deck…</h2>
+          <p>…estou numa mesa de RPG. Por aqui aparecem {rpg.map((r, i) => <>{i > 0 && (i === rpg.length - 1 ? ' e ' : ', ')}<a href={r.url} target="_blank" rel="noopener">{r.name}</a></>)}.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- PARCERIAS -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="kicker">Cupons e parcerias</span>
+          <h2 class="h2">Economize com o cupom <span class="coupon-word">{site.coupon}</span></h2>
+          <p>As lojas e marcas que eu uso e recomendo. Usando meu cupom você economiza e ainda fortalece o conteúdo.</p>
+        </div>
+        <a class="btn btn--ghost btn--sm" href="/parcerias">Ver parcerias <Icon name="arrow" size={16} /></a>
+      </div>
+      <ul class="logos">
+        {partners.map((p) => (
+          <li><a href={p.url} target="_blank" rel="noopener sponsored" title={p.name}><img src={p.logo} alt={p.name} width="140" height="140" loading="lazy" /></a></li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="section section--tight section--panel">
+    <div class="wrap contact">
+      <h2 class="h2">Sua marca no meu command zone?</h2>
+      <a class="btn" href={`mailto:${site.email}`}><Icon name="mail" /> Falar com a Troy</a>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero { position: relative; overflow: hidden; padding: clamp(36px, 6vw, 80px) 0 clamp(48px, 6vw, 80px); }
+  .hero::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 160px; background: linear-gradient(transparent, var(--bg)); pointer-events: none; }
+  .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(55% 70% at 78% 40%, rgb(160 20 20 / .45), transparent 70%), radial-gradient(40% 50% at 0% 100%, rgb(110 12 12 / .35), transparent 70%); }
+  .hero__bg { position: absolute; right: -6%; top: 50%; translate: 0 -50%; width: min(70vw, 900px); opacity: .06; filter: grayscale(1) brightness(2); pointer-events: none; }
+  .hero__bg img { width: 100%; }
+  .hero__grid { position: relative; display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(32px, 6vw, 80px); align-items: center; }
+  .hero h1 { margin: 18px 0 20px; }
+  .hero__lead { font-size: clamp(1.15rem, 1.7vw, 1.35rem); max-width: 54ch; }
+  .hero__lead strong { color: #fff; }
+  .hero__cta { display: flex; flex-wrap: wrap; gap: 12px; margin: 28px 0 36px; }
+  .stats { display: grid; grid-template-columns: repeat(3, auto); justify-content: start; gap: 0; margin: 0; border-top: 1px solid var(--line); padding-top: 22px; }
+  .stats div { padding-right: clamp(20px, 3vw, 40px); margin-right: clamp(20px, 3vw, 40px); border-right: 1px solid var(--line); }
+  .stats div:last-child { border: 0; margin: 0; padding: 0; }
+  .stats dt { font: 700 .78rem/1 var(--font-label); letter-spacing: .16em; text-transform: uppercase; color: var(--faint); }
+  .stats dd { margin: 8px 0 0; font: 400 2.1rem/1 var(--font-display); color: var(--bone); }
+  .hero__photo { margin: 0; position: relative; justify-self: center; max-width: 420px; rotate: 2deg; }
+  .hero__photo::before { content: ''; position: absolute; inset: 14px -14px -14px 14px; background: var(--red); border-radius: var(--radius); z-index: -1; }
+  .hero__photo img { border-radius: var(--radius); box-shadow: var(--shadow); aspect-ratio: 900/1259; object-fit: cover; }
+  .hero__photo figcaption { position: absolute; left: -24px; bottom: 28px; rotate: -4deg; background: var(--bg); border: 1px solid var(--line-strong); padding: 10px 14px; font: 400 1.25rem/1.15 var(--font-hand); color: var(--bone); max-width: 80%; box-shadow: var(--shadow); }
+
+  .color-group + .color-group { margin-top: 32px; }
+  .color-group h3 { font-size: 1rem; letter-spacing: .16em; color: var(--faint); margin-bottom: 12px; }
+  .color-group h3 a { text-decoration: none; }
+  .color-group h3 a:hover { color: var(--red-hot); }
+  .color-grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 190px), 1fr)); }
+  .color-tile { display: flex; align-items: center; gap: 12px; min-height: 56px; padding: 0 16px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); text-decoration: none; transition: border-color .15s, background-color .15s, transform .15s; }
+  .color-tile:hover { border-color: var(--red-hot); background: var(--surface-2); color: #fff; transform: translateY(-2px); }
+  .color-tile__name { font: 700 1.1rem/1 var(--font-label); letter-spacing: .04em; text-transform: uppercase; }
+  .color-tile__count { margin-left: auto; font: 600 .9rem/1 var(--font-label); color: var(--faint); }
+  .pauper-mark { width: 1.3rem; height: 1.3rem; border-radius: 50%; display: grid; place-items: center; background: #2b2b2b; color: var(--bone); font: 700 .75rem/1 var(--font-label); box-shadow: 0 0 0 1px var(--line-strong); }
+
+  .apps { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(16px, 2.5vw, 28px); }
+  .app { position: relative; overflow: hidden; padding: clamp(28px, 4vw, 48px); border-radius: var(--radius); border: 1px solid var(--line); background: var(--surface); display: flex; flex-direction: column; align-items: flex-start; }
+  .app::after { content: ''; position: absolute; width: 360px; height: 360px; right: -140px; top: -160px; border-radius: 50%; background: radial-gradient(circle, rgb(236 59 48 / .28), transparent 65%); pointer-events: none; }
+  .app--bandway { background: linear-gradient(150deg, #241a1a, #140f0f); }
+  .app--bandway::after { background: radial-gradient(circle, rgb(237 229 219 / .14), transparent 65%); }
+  .app__mark { width: 64px; height: 64px; display: grid; place-items: center; border-radius: 14px; background: var(--red); color: #fff; margin-bottom: 22px; rotate: -4deg; overflow: hidden; }
+  .app__mark img { width: 100%; height: 100%; object-fit: cover; }
+  .app--bandway .app__mark img { object-fit: contain; padding: 6px; }
+  .app--bandway .app__mark { background: var(--bone); color: #140f0f; }
+  .app__kicker { font: 400 1.3rem/1 var(--font-hand); color: var(--faint); }
+  .app__name { font: 400 clamp(2.2rem, 4vw, 3.2rem)/1 var(--font-display); text-transform: none; letter-spacing: 0; margin: 10px 0 8px; }
+  .app__tag { font: 700 1.15rem/1.3 var(--font-label); letter-spacing: .04em; text-transform: uppercase; color: var(--bone); }
+  .app .btn { margin-top: auto; }
+  .app p.muted { margin-bottom: 26px; }
+
+  .duo { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(24px, 4vw, 56px); }
+  .duo__item { display: grid; grid-template-columns: 180px 1fr; gap: 24px; align-items: center; }
+  .duo__item img { border-radius: var(--radius); box-shadow: var(--shadow); aspect-ratio: 3/4; object-fit: cover; }
+  .duo__item h2 { font-size: clamp(1.6rem, 2.6vw, 2.1rem); margin-top: 12px; }
+  .duo__item a:not(.btn) { color: #fff; text-decoration-color: var(--bone); }
+  .kicker--bone { color: var(--bone); }
+
+  .coupon-word { color: var(--red-hot); }
+  .logos { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(7, 1fr); gap: 12px; }
+  .logos a { display: block; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); transition: transform .15s, border-color .15s; }
+  .logos a:hover { transform: translateY(-3px); border-color: var(--red-hot); }
+  .logos img { aspect-ratio: 1; object-fit: cover; width: 100%; }
+
+  .contact { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; }
+  .contact h2 { margin: 0; }
+
+  @media (max-width: 900px) {
+    .hero__grid { grid-template-columns: 1fr; }
+    .hero__photo { order: -1; max-width: 300px; }
+    .apps, .duo { grid-template-columns: 1fr; }
+    .logos { grid-template-columns: repeat(4, 1fr); }
+  }
+  @media (max-width: 520px) {
+    .duo__item { grid-template-columns: 110px 1fr; gap: 16px; align-items: start; }
+    .stats dd { font-size: 1.6rem; }
+    .stats div { padding-right: 14px; margin-right: 14px; }
+    .stats dt { font-size: .68rem; letter-spacing: .1em; }
+    .hero__photo { max-width: 240px; }
+    .hero__photo figcaption { left: -10px; font-size: .8rem; }
+  }
+</style>

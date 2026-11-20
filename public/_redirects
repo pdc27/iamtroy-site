@@ -1,0 +1,6 @@
+# URLs antigas do Google Sites -> novas (Cloudflare Pages)
+/home                               /                                   301
+/decks-commander/três-cores         /decks-commander/tres-cores         301
+/decks-commander/três-cores/*       /decks-commander/tres-cores/:splat  301
+/decks-commander/tr%C3%AAs-cores    /decks-commander/tres-cores         301
+/decks-commander/tr%C3%AAs-cores/*  /decks-commander/tres-cores/:splat  301

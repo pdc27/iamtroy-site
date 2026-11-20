@@ -1,0 +1,11 @@
+---
+import CategoryView from '../components/CategoryView.astro';
+import { category, decksIn } from '../lib/data';
+const cat = category('decks-pauper');
+const list = decksIn('decks-pauper');
+---
+<CategoryView cat={cat} decks={list}
+  title={`Decks de Pauper: ${list.length} listas baratas e competitivas`}
+  h1="Decks Pauper"
+  description="O que é Pauper, o formato só de comuns do Magic, e listas de decks baratos e competitivos: Elfos, Kuldotha Red, Fairy Mono Blue, Dimir Terror e mais."
+  crumbs={[{ name: 'Pauper' }]} />
