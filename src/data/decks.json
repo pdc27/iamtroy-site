@@ -64701,5 +64701,321 @@
   "cover": "https://cards.scryfall.io/art_crop/front/a/b/aba981f9-ebc6-48ac-b768-557f632b82df.jpg?1783907070",
   "created": "2026-11-19T20:04:10.576899+00:00",
   "updated": "2026-11-19T20:04:10.576899+00:00"
+ },
+ {
+  "name": "Vito, Thorn of the Dusk Rose",
+  "category": "preto",
+  "format": "commander",
+  "url": "https://magicfinder.app/deck/50373e2a-e131-49d1-bd38-0b6ab2b7a7c4?ref=FU9P9UZN",
+  "source": "MagicFinder",
+  "slug": "vito-thorn-of-the-dusk-rose",
+  "cards": [
+   {
+    "n": "Vito, Thorn of the Dusk Rose",
+    "q": 1
+   },
+   {
+    "n": "Exquisite Blood",
+    "q": 1
+   },
+   {
+    "n": "Sanguine Bond",
+    "q": 1
+   },
+   {
+    "n": "Bloodthirsty Conqueror",
+    "q": 1
+   },
+   {
+    "n": "Defiant Bloodlord",
+    "q": 1
+   },
+   {
+    "n": "Vampire Nighthawk",
+    "q": 1
+   },
+   {
+    "n": "Vampire of the Dire Moon",
+    "q": 1
+   },
+   {
+    "n": "Child of Night",
+    "q": 1
+   },
+   {
+    "n": "Gifted Aetherborn",
+    "q": 1
+   },
+   {
+    "n": "Vampire Nocturnus",
+    "q": 1
+   },
+   {
+    "n": "Basilisk Collar",
+    "q": 1
+   },
+   {
+    "n": "Loxodon Warhammer",
+    "q": 1
+   },
+   {
+    "n": "Whip of Erebos",
+    "q": 1
+   },
+   {
+    "n": "Gray Merchant of Asphodel",
+    "q": 1
+   },
+   {
+    "n": "Marauding Blight-Priest",
+    "q": 1
+   },
+   {
+    "n": "Blood Artist",
+    "q": 1
+   },
+   {
+    "n": "Zulaport Cutthroat",
+    "q": 1
+   },
+   {
+    "n": "Kalastria Highborn",
+    "q": 1
+   },
+   {
+    "n": "Vampire Sovereign",
+    "q": 1
+   },
+   {
+    "n": "Sanctum Seeker",
+    "q": 1
+   },
+   {
+    "n": "Twilight Prophet",
+    "q": 1
+   },
+   {
+    "n": "Sovereign's Bite",
+    "q": 1
+   },
+   {
+    "n": "Exsanguinate",
+    "q": 1
+   },
+   {
+    "n": "Corrupt",
+    "q": 1
+   },
+   {
+    "n": "Vampiric Rites",
+    "q": 1
+   },
+   {
+    "n": "Bloodline Keeper // Lord of Lineage",
+    "q": 1
+   },
+   {
+    "n": "Champion of Dusk",
+    "q": 1
+   },
+   {
+    "n": "Dusk Legion Zealot",
+    "q": 1
+   },
+   {
+    "n": "Indulgent Aristocrat",
+    "q": 1
+   },
+   {
+    "n": "Cordial Vampire",
+    "q": 1
+   },
+   {
+    "n": "Bloodlord of Vaasgoth",
+    "q": 1
+   },
+   {
+    "n": "Night Market Lookout",
+    "q": 1
+   },
+   {
+    "n": "Diabolic Tutor",
+    "q": 1
+   },
+   {
+    "n": "Dark Petition",
+    "q": 1
+   },
+   {
+    "n": "Increasing Ambition",
+    "q": 1
+   },
+   {
+    "n": "Rune-Scarred Demon",
+    "q": 1
+   },
+   {
+    "n": "Phyrexian Arena",
+    "q": 1
+   },
+   {
+    "n": "Night's Whisper",
+    "q": 1
+   },
+   {
+    "n": "Sign in Blood",
+    "q": 1
+   },
+   {
+    "n": "Read the Bones",
+    "q": 1
+   },
+   {
+    "n": "Underworld Connections",
+    "q": 1
+   },
+   {
+    "n": "Skullclamp",
+    "q": 1
+   },
+   {
+    "n": "Midnight Reaper",
+    "q": 1
+   },
+   {
+    "n": "Feed the Swarm",
+    "q": 1
+   },
+   {
+    "n": "Infernal Grasp",
+    "q": 1
+   },
+   {
+    "n": "Go for the Throat",
+    "q": 1
+   },
+   {
+    "n": "Murder",
+    "q": 1
+   },
+   {
+    "n": "Hero's Downfall",
+    "q": 1
+   },
+   {
+    "n": "Bake into a Pie",
+    "q": 1
+   },
+   {
+    "n": "Bloodchief's Thirst",
+    "q": 1
+   },
+   {
+    "n": "Heartless Act",
+    "q": 1
+   },
+   {
+    "n": "Crux of Fate",
+    "q": 1
+   },
+   {
+    "n": "Black Sun's Zenith",
+    "q": 1
+   },
+   {
+    "n": "Sol Ring",
+    "q": 1
+   },
+   {
+    "n": "Arcane Signet",
+    "q": 1
+   },
+   {
+    "n": "Mind Stone",
+    "q": 1
+   },
+   {
+    "n": "Fellwar Stone",
+    "q": 1
+   },
+   {
+    "n": "Charcoal Diamond",
+    "q": 1
+   },
+   {
+    "n": "Wayfarer's Bauble",
+    "q": 1
+   },
+   {
+    "n": "Thought Vessel",
+    "q": 1
+   },
+   {
+    "n": "Commander's Sphere",
+    "q": 1
+   },
+   {
+    "n": "Worn Powerstone",
+    "q": 1
+   },
+   {
+    "n": "Bojuka Bog",
+    "q": 1
+   },
+   {
+    "n": "Myriad Landscape",
+    "q": 1
+   },
+   {
+    "n": "Mortuary Mire",
+    "q": 1
+   },
+   {
+    "n": "Rogue's Passage",
+    "q": 1
+   },
+   {
+    "n": "Ash Barrens",
+    "q": 1
+   },
+   {
+    "n": "Vault of Whispers",
+    "q": 1
+   },
+   {
+    "n": "Castle Locthwain",
+    "q": 1
+   },
+   {
+    "n": "Leechridden Swamp",
+    "q": 1
+   },
+   {
+    "n": "Swamp",
+    "q": 30
+   }
+  ],
+  "sideboard": [],
+  "commanders": [
+   "Vito, Thorn of the Dusk Rose"
+  ],
+  "colors": [
+   "B"
+  ],
+  "curve": [
+   0,
+   9,
+   21,
+   12,
+   7,
+   10,
+   3
+  ],
+  "avgCmc": 2.98,
+  "bracket": 2,
+  "priceUsd": 159.46,
+  "cover": "https://cards.scryfall.io/art_crop/front/5/d/5deb74ff-15df-4894-b074-9a98731bd2c0.jpg?1783908850",
+  "created": "2026-11-23T14:17:13.883312+00:00",
+  "updated": "2026-11-23T14:17:13.883312+00:00"
  }
 ]
