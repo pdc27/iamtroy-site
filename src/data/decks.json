@@ -65017,5 +65017,313 @@
   "cover": "https://cards.scryfall.io/art_crop/front/5/d/5deb74ff-15df-4894-b074-9a98731bd2c0.jpg?1783908850",
   "created": "2026-11-23T14:17:13.883312+00:00",
   "updated": "2026-11-23T14:17:13.883312+00:00"
+ },
+ {
+  "name": "Pianna, Nomad Captain (low budget)",
+  "category": "branco",
+  "format": "commander",
+  "url": "https://magicfinder.app/deck/ae88bb7f-a6ca-4d8a-a558-9798ab586c25?ref=FU9P9UZN",
+  "source": "MagicFinder",
+  "slug": "pianna-nomad-captain-low-budget",
+  "cards": [
+   {
+    "n": "Pianna, Nomad Captain",
+    "q": 1
+   },
+   {
+    "n": "Ainok Bond-Kin",
+    "q": 1
+   },
+   {
+    "n": "Benalish Commander",
+    "q": 1
+   },
+   {
+    "n": "Boros Elite",
+    "q": 1
+   },
+   {
+    "n": "Captain of the Watch",
+    "q": 1
+   },
+   {
+    "n": "Cliffside Lookout",
+    "q": 1
+   },
+   {
+    "n": "Custodi Squire",
+    "q": 1
+   },
+   {
+    "n": "Dawnbringer Cleric",
+    "q": 1
+   },
+   {
+    "n": "Doomed Traveler",
+    "q": 1
+   },
+   {
+    "n": "Elite Scaleguard",
+    "q": 1
+   },
+   {
+    "n": "Esquire of the King",
+    "q": 1
+   },
+   {
+    "n": "Expedition Envoy",
+    "q": 1
+   },
+   {
+    "n": "Hanged Executioner",
+    "q": 1
+   },
+   {
+    "n": "Healer's Hawk",
+    "q": 1
+   },
+   {
+    "n": "Hero of Goma Fada",
+    "q": 1
+   },
+   {
+    "n": "Inspiring Overseer",
+    "q": 1
+   },
+   {
+    "n": "Intrepid Rabbit",
+    "q": 1
+   },
+   {
+    "n": "Militia Bugler",
+    "q": 1
+   },
+   {
+    "n": "Palace Jailer",
+    "q": 1
+   },
+   {
+    "n": "Pilgrim's Eye",
+    "q": 1
+   },
+   {
+    "n": "Resolute Reinforcements",
+    "q": 1
+   },
+   {
+    "n": "Seasoned Marshal",
+    "q": 1
+   },
+   {
+    "n": "Seasoned Warrenguard",
+    "q": 1
+   },
+   {
+    "n": "Seraph of Dawn",
+    "q": 1
+   },
+   {
+    "n": "Skyknight Squire",
+    "q": 1
+   },
+   {
+    "n": "Squad Rallier",
+    "q": 1
+   },
+   {
+    "n": "Starfield Shepherd",
+    "q": 1
+   },
+   {
+    "n": "Sunblade Angel",
+    "q": 1
+   },
+   {
+    "n": "Thraben Valiant",
+    "q": 1
+   },
+   {
+    "n": "Village Bell-Ringer",
+    "q": 1
+   },
+   {
+    "n": "Ajani's Presence",
+    "q": 1
+   },
+   {
+    "n": "Charge",
+    "q": 1
+   },
+   {
+    "n": "Disenchant",
+    "q": 1
+   },
+   {
+    "n": "Path to Exile",
+    "q": 1
+   },
+   {
+    "n": "Gideon's Reproach",
+    "q": 1
+   },
+   {
+    "n": "Gods Willing",
+    "q": 1
+   },
+   {
+    "n": "Harm's Way",
+    "q": 1
+   },
+   {
+    "n": "Make Your Move",
+    "q": 1
+   },
+   {
+    "n": "Midnight Haunting",
+    "q": 1
+   },
+   {
+    "n": "Settle the Wreckage",
+    "q": 1
+   },
+   {
+    "n": "Solidarity",
+    "q": 1
+   },
+   {
+    "n": "Swords to Plowshares",
+    "q": 1
+   },
+   {
+    "n": "Take Up the Shield",
+    "q": 1
+   },
+   {
+    "n": "Captain's Call",
+    "q": 1
+   },
+   {
+    "n": "Destroy Evil",
+    "q": 1
+   },
+   {
+    "n": "Launch the Fleet",
+    "q": 1
+   },
+   {
+    "n": "Revoke Existence",
+    "q": 1
+   },
+   {
+    "n": "Arrest",
+    "q": 1
+   },
+   {
+    "n": "Banishing Light",
+    "q": 1
+   },
+   {
+    "n": "Call for Unity",
+    "q": 1
+   },
+   {
+    "n": "Citizen's Arrest",
+    "q": 1
+   },
+   {
+    "n": "Faith's Fetters",
+    "q": 1
+   },
+   {
+    "n": "Glorious Anthem",
+    "q": 1
+   },
+   {
+    "n": "Honor of the Pure",
+    "q": 1
+   },
+   {
+    "n": "Journey to Oblivion",
+    "q": 1
+   },
+   {
+    "n": "Pacifism",
+    "q": 1
+   },
+   {
+    "n": "Valor in Akros",
+    "q": 1
+   },
+   {
+    "n": "Arcane Signet",
+    "q": 1
+   },
+   {
+    "n": "Lightning Greaves",
+    "q": 1
+   },
+   {
+    "n": "Mind Stone",
+    "q": 1
+   },
+   {
+    "n": "Prophetic Prism",
+    "q": 1
+   },
+   {
+    "n": "Shrine of Loyal Legions",
+    "q": 1
+   },
+   {
+    "n": "Sol Ring",
+    "q": 1
+   },
+   {
+    "n": "Staff of Nin",
+    "q": 1
+   },
+   {
+    "n": "Swiftfoot Boots",
+    "q": 1
+   },
+   {
+    "n": "Wayfarer's Bauble",
+    "q": 1
+   },
+   {
+    "n": "Command Tower",
+    "q": 1
+   },
+   {
+    "n": "Drifting Meadow",
+    "q": 1
+   },
+   {
+    "n": "Plains",
+    "q": 32
+   }
+  ],
+  "sideboard": [],
+  "commanders": [
+   "Pianna, Nomad Captain"
+  ],
+  "colors": [
+   "W"
+  ],
+  "curve": [
+   0,
+   16,
+   18,
+   13,
+   10,
+   6,
+   3
+  ],
+  "avgCmc": 2.71,
+  "bracket": 2,
+  "priceUsd": 20.83,
+  "cover": "https://cards.scryfall.io/art_crop/front/9/0/90ebb129-aa8d-4107-8e74-0b04525d76e0.jpg?1783915714",
+  "created": "2026-11-23T15:56:57.790912+00:00",
+  "updated": "2026-11-23T15:56:57.790912+00:00"
  }
 ]
